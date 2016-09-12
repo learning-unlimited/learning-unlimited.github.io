@@ -18,6 +18,7 @@ permalink: pretty
 #    have images in images/content-pages/navbar-links/<type>/<name>.gif for
 #    each type in "normal" (the usual gray), "current" (blue if we are in that
 #    section of the site), and "hover" (red on hover)
+#  * seq: set to a positive value (used as ordering) to show in the navbar
 #  * sep: true to show a sep after this item in the nav
 #  * br: true to put a line break after this item in the nav
 #  * url: if specified, link to this instead of our own pages.  In this case,
@@ -30,40 +31,46 @@ permalink: pretty
 #    index.html page for each collection MUST specify its permalink, including
 #    a trailing slash
 #  * redirect_from, redirect_to: as specified by jekyll-redirect-from
-#  * seq: set to a positive value (used as ordering) to show in the navbar
+#  * seq: set to a positive value (used as ordering) to show in the sub-navbar
 # Pages not in any section should go in the "misc" collection, and should
 # likely specify a permalink.
 collections:
-  misc:  # TODO(benkraft): do we need this?
+  misc:
     output: true
     permalink: /:path/
   about:
     output: true
+    seq: 10
     nav: true
     sep: true
     title: "About Learning Unlimited"
   current-programs:
     output: true
+    seq: 20
     nav: true
     sep: true
     title: "Current Programs"
   contact:
     output: true
+    seq: 30
     nav: true
     br: true
     title: "Contact"
   becoming-a-chapter:
     output: true
+    seq: 40
     nav: true
     sep: true
     title: "Becoming a Chapter"
   participate:
     output: true
+    seq: 50
     nav: true
     sep: true
     title: "Participate"
   give:
     output: false
+    seq: 60
     nav: true
     title: "Give"
     url: https://donatenow.networkforgood.org/1442637
