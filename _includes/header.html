@@ -1,0 +1,35 @@
+<html>
+  <head>
+      <title>{% if page.title %} {{ page.title }}{% endif %}{% if page.title and section.title %} :: {% endif %}{% if section.title %}{{ section.title}}{% endif %}</title>
+    <link rel="stylesheet" type="text/css" href="/media/css/content-pages.css" />
+    <script type="text/javascript">
+      function make_normal()
+      {
+      document.getElementById("go_normal").style.display = "inline";
+      document.getElementById("go_hover").style.display = "none";
+      }
+
+      function hover_go()
+      {
+      document.getElementById("go_hover").style.display = "inline";
+      document.getElementById("go_normal").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+
+    <div id="content">
+      <div id="header">
+        <div id="logo">
+          <a href="/"><img src="/media/images/content-pages/logo.gif" alt="Learning Unlimited" /></a>
+        </div>
+
+        <div id="navbar">{% include navbar.html %}</div>
+
+        <div class="hr"><hr/></div>
+
+      </div>
+
+      <div id="body">
+        
+      <div id="subnavbar">{% include subnavbar.html %}</div>

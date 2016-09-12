@@ -1,0 +1,119 @@
+---
+layout: default
+title: When & Where?
+seq: 20
+permalink: /current-programs/
+redirect_from:
+  - /current-programs/when-and-where
+---
+<!-- Wish these could be in head! -->
+<script src="/media/scripts/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+function areaclick(areaname) {
+  $('#mapinfocontent').html($('div#'+areaname).html());
+  $('#maptable').show();
+}
+$(function() {
+  $('#closebutton').click(function() { $('#maptable').hide() });
+});
+</script>
+<style>
+.upcoming-programs h2 {
+  text-align: center;
+}
+#mapinfocontent h2 {
+  font-size: 120%;
+  color: #666;
+}
+</style>
+</style>
+
+<div id="realbody">
+
+<h1>LU Programs Around the Country</h1>
+
+<p>LU programs are currently running or starting up at over 20 universities in 10 states, as well as one international program in the UK. Click on a program near you for more information.</p>
+
+<div id="programmap">
+  <div style="position: absolute;">
+    <img src="/media/images/photos/lu-map.png" width="700" height="438" alt="Map" usemap="#areamap">
+    <map name="areamap"> <!-- map regions are northeast, midwest, midatlantic, south, west -->
+      <area shape="poly" coords="544,170,600,175,607,183,700,183,700,30,544,30" href="#" alt="Northeast" onclick="areaclick('northeast');">
+      <area shape="rect" coords="325,131,485,281" href="#" alt="Midwest" onclick="areaclick('midwest');">
+      <area shape="poly" coords="544,170,600,175,607,283,613,290,483,290" href="#" alt="Mid-atlantic" onclick="areaclick('midatlantic');">
+      <area shape="poly" coords="200,245,584,278,584,438,200,438" href="#" alt="South" onclick="areaclick('south');">
+      <area shape="rect" coords="0,0,180,350" href="#" alt="West" onclick="areaclick('west');">
+    </map>
+  </div>
+  <div style="position: absolute; width: 700px; top: 75px;">
+    <center>
+      <table id="maptable" style="display: none; width: 400px;" CELLPADDING=0 CELLSPACING=0 BORDER=0>
+        <tr><td><img id="closebutton" src="/media/images/content-pages/close-icon.gif" width="14" height="14" alt="Close"><div id="mapinfocontent"></div></td></tr>
+      </table>
+    </center>
+  </div>
+</div>
+
+<h2>Upcoming Programs</h2>
+
+<div class="upcoming-programs">
+  
+  <div id="northeast">
+  <h2>The Northeast</h2>
+  <li><a href="http://esp.mit.edu">MIT ESP</a> in Cambridge, MA.</li>
+  <li><a href="http://bcsplash.learningu.org/" title="BC Splash">Boston College Splash</a> in Chestnut Hill, MA.</li>
+  <li><a href="https://babsonsplash.learningu.org/" title="Babson Splash">Babson Splash</a> in Wellesley, MA.</li>
+  <li><a href="https://clarkuesp.learningu.org/" title="Clark University ESP">Clark University ESP</a> in Worcester, MA.</li>
+  <li><a href="https://amherstsplash.learningu.org/">Amherst College Splash </a> in Amherst, MA.</li>
+  <li><a href="https://brandeis.learningu.org/">Brandeis University Splash </a> in Waltham, MA.</li>
+  <li><a href="https://smithsplash.learningu.org/">Smith College Splash</a> in Northampton, MA.</li>
+  <li><a href="https://neptun.learningu.org/">Northeastern University Neptun</a> in Boston, MA.</li>
+  <li><a href="https://princeton.learningu.org/">Princeton Splash</a> in Princeton, NJ.</li>
+  <li><a href="http://www.cims.nyu.edu/~csplash/index.php" title="cSplash">cSplash at the Courant Institute</a> in New York, NY.</li>
+  <li><a href="https://columbia.learningu.org/">Columbia ESP</a> in New York, NY.</li>
+  <li><a href="https://cornell.learningu.org/">Cornell Splash</a> in Ithaca, NY.</li>
+  <li><a href="https://marist.learningu.org/">Marist Splash</a> in Poughkeepsie, NY.</li>
+  <li><a href="http://njitsplash.learningu.org">NJIT Splash</a> in Newark, NJ.</li>
+  <li><a href="http://yale.learningu.org">Yale Splash</a> in New Haven, CT.</li>
+  <!-- <li><a href="http://cushingsplash.learningu.org">Cushing Splash</a> in Ashburnham, MA.</li> -->
+  </div>
+
+  <div id="midwest">
+  <h2>The Midwest</h2>
+  <li><a href="http://splashchicago.learningu.org/">Splash! Chicago</a> in Chicago, IL.</li>
+  <li><a href="http://www.grinnell.edu/academics/offices/careers-in-education/ignite">Grinnell College</a> in Grinnell, IA.</li>
+  <li><a href="http://uiucsplash.org/">Splash@UIUC</a> in Urbana-Champaign, IL.</li>
+  </div>
+
+  <div id="midatlantic">    
+  <h2>The Mid-Atlantic</h2>
+  <li><a href="http://dukesplash.learningu.org">Duke Splash</a> in Durham, NC.</li>
+  <li><a href="http://splash.web.unc.edu/">UNC Splash</a> in Chapel Hill, NC.</li>
+  <li><a href="http://splashumbc.learningu.org">University of Maryland, Baltimore County Splash</a> in Baltimore, MD.</li>
+  <li><a href="http://hopkins.learningu.org">Hopkins Splash</a>, in Baltimore, MD.</li>
+  </div>
+
+  <div id="south">
+  <h2>The South</h2>
+  <li><a href="http://susplash.learningu.org">Southwestern Splash</a> in Georgetown, TX.</li>
+  <li><a href="https://ricesplash.learningu.org">Rice Splash</a> in Houston, TX.</li>
+  </div>
+
+  <div id="west">
+  <h2>The West Coast</h2>
+  <li><a href="http://stanfordesp.org/">Stanford ESP</a> in Palo Alto, CA.</li>
+  <li><a href="https://berkeley.learningu.org/"> Berkeley Splash </a> in Berkeley, CA.</li>
+  <li><a href="https://claremont.learningu.org/">Claremont Colleges</a> in Claremont, CA.</li>
+  <li><a href="http://granite.learningu.org/">S.T.I.N.G.</a> a Splash for middle school students at Granite Hills High School El Cajon, CA.</li>
+  <li><a href="http://www.splashsc.org/">Splash SC</a>, in Los Angeles, CA.</li>
+  <!-- <li><a href="https://splashatucla.learningu.org/">Splash at UCLA</a>, in Los Angeles, CA.</li> -->
+  </div>
+
+  <div id="international">
+  <h2>International</h2>
+  <li><a href="https://oxford.learningu.org/">Oxford Splash</a> in Oxford, UK.</li>
+  </div>
+</div>
+
+<p> Don't see a Splash at your school? Click <a href="http://www.learningu.org/becoming-a-chapter/create-a-new-splash">here</a> to start one. 
+</div>

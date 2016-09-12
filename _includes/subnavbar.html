@@ -1,0 +1,16 @@
+{% if section.docs.size > 1 and section.label != "misc" %}
+  <span class="heading">{{section.title}}:</span>
+  {% assign sorted_docs = section.docs | sort: 'seq' %}
+  {% for doc in sorted_docs %}
+    {% if doc.seq > 0 %}
+      <span {% if page.url == doc.url %}class="current"{% endif %}>
+        <a href="{% if doc.redirect_to %}{{doc.redirect_to}}{% else %}{{doc.url}}{% endif %}">{{doc.title}}</a>
+      </span>
+      {% unless forloop.last %}
+        <span class="separator">
+          <img src="/media/images/content-pages/bullet-grey.gif" alt="" />
+        </span>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+{% endif %}

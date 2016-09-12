@@ -1,0 +1,70 @@
+---
+layout: default
+title: About LU Programs
+seq: 10
+---
+
+<div id="realbody">
+
+<h1>Current Programs</h1>
+
+<p>Learning Unlimited incubates and provides a national support structure for independent, college-student-led educational programs aimed at middle and high school students.</p>
+
+<p><strong>Splash</strong> is by far the most common Learning Unlimited program; it's a weekend-long extravaganza of classes at a local college or university, where pre-college students are invited to <strong>learn about everything and anything</strong> from passionate university students. Splash currently runs at <a href="http://esp.mit.edu/learn/Splash/index.html">MIT</a>, at <a href="http://stanfordesp.org/">Stanford University</a>, at the <a href="http://splashchicago.learningu.org/">University of Chicago</a>, at <a href="http://dukesplash.learningu.org/">Duke University</a>, at <a href="http://yale.learningu.org/">Yale University</a>, at <a href="http://bcsplash.learningu.org">Boston College</a>, and many more! </p>
+
+<p><strong>Take a look at our <a href="/current-programs/when-and-where">map and calendar</a> for a complete list and to find a Splash near you!</p></strong>
+
+<img src="/media/images/photos/mit-splash.jpg" width="700" height="226" alt="MIT Splash">
+<div class="imagecaption">MIT Splash 2008</div>
+
+<p>Several groups also run a multi-week program, called <strong>Cascade</strong> at <a href="http://splashchicago.learningu.org/learn/cascade.html" title="Learn More About Cascade!">Chicago</a>, <strong>Sprout</strong> at <a href="http://yale.learningu.org/learn/sprout.html" title="Yale Sprout">Yale</a>, and <strong>HSSP</strong> at <a href="http://esp.mit.edu/learn/HSSP/index.html" title="MIT HSSP">MIT</a> and <a href="http://www.hcs.harvard.edu/~esp/web/" title="Harvard HSSP">Harvard</a>. This program has been going strong at MIT since 1957! HSSP classes are taught over several weeks, and cover material in greater depth than the typical Splash class.</p>
+
+<p>The MIT group, MIT ESP, also runs several other programs, including an AP class program called <strong>Delve</strong> and a summer intensive course program called <strong>Junction</strong>.</p>
+
+<p>Find out about <a href="/current-programs/when-and-where">where and when our programs run</a>, or <a href="/current-programs/classes">read about some of the classes we offer</a>.</p>
+
+<!-- <p>Today, there are six universities where programs are run in the model that Learning Unlimited supports.  If you or someone you know lives in one of these cities, tell them about it!</p>
+
+<ul>
+   <li><b><a href="http://www.cims.nyu.edu/~csplash/index.php">cSplash</a></b> runs at the Courant Institute at New York University in New York, NY.</li>
+   <li><b><a href="http://dukesplash.learningu.org/">Duke Splash</a></b> runs at Duke University in Durham, NC.</li>
+   <li><b><a href="http://esp.mit.edu">The MIT Educational Studies Program</a></b> runs at the Massachusetts Institute of Technology in Cambridge, MA.</li>
+   <li><b><a href="http://nusplash.learningu.org/">Northwestern Splash</a></b> runs at Northwestern University in Evanston, IL (a suburb of Chicago).</li>
+   <li><b><a href="http://www.stanfordesp.org">The Stanford Educational Studies Program</a></b> runs at Stanford University in Palo Alto, CA.</li>
+   <li><b><a href="http://splashchicago.learningu.org/">Splash! Chicago</a></b> runs at the University of Chicago in Chicago, IL.</li>
+</ul> -->
+
+      <script>
+        function set_div_class(className) {
+          document.getElementById("mailing_list").className = className;
+        }
+
+        function submit_email() {
+          var xhr = new XMLHttpRequest();
+          var email = document.getElementById("email_input").value;
+          var data = "ca=b750bc08-f0d3-44d1-be8f-94d3f02c19b9list=1&source=EFD&required=list,email&email=" + encodeURIComponent(email);
+          xhr.addEventListener("load", handle_load);
+          xhr.addEventListener("error", function() {set_div_class("error");});
+          xhr.open("POST", "https://visitor2.constantcontact.com/api/signup")
+          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+          xhr.setRequestHeader('Content-Length', data.length);
+          xhr.send(data);
+          set_div_class("submitted");
+        }
+
+        function handle_load() {
+          if (this.responseText && JSON.parse(this.responseText).success) {
+            set_div_class("success");
+          } else {
+            set_div_class("error");
+          }
+        }
+      </script>
+      <div id="mailing_list">
+        <label for="email">Sign up to receive monthly announcements and events:</label>
+        <input id="email_input" name="email" value="" maxlength="80" type="text" placeholder="your email">
+        <button class="go-button" type="submit" data-enabled="enabled" onclick="javascript:submit_email()">GO</button>
+      </div>
+
+
+</div>

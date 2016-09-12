@@ -1,0 +1,71 @@
+---
+layout: default
+title: Testimonials
+seq: 30
+---
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript">
+  function dealWithFailure(post) {
+    $("#spinner").hide();
+    emsg = $("<p style='color: red;'>Due to an error, your testimonial was not submitted. Please email it to <a href='mailto:testimonials@lists.example.com'>testimonials@lists.example.com</a>. Thanks!</p>".replace(/example.com/g, "learningu.org"))
+    postSpan = $("<span>");
+    postSpan.text(post);
+    emsg.append(postSpan);
+    $("#testimonialdiv").append(emsg);
+  }
+
+  function testimonialSuccess(data) {
+    if (data.substring(0, 2) == "OK") {
+      $("#testimonialdiv").html("<p>Thank you for your testimonial! (To submit another, <a href='/participate/testimonials'>reload this page</a>.)</p>")
+    } else {
+      dealWithFailure("(1): "+data);
+    }
+  }
+  
+  function testimonialError(xhr, statusText, errorThrown) {
+    dealWithFailure("(2): "+statusText);
+  }
+  
+  $(function() {
+    $("#testimonialform").submit(function() {
+      $("input").attr("disabled", "disabled");
+      $("textarea").attr("disabled", "disabled");
+      $("#spinner").show();
+      $.ajax({
+        type: "post",
+        url: "/testimonial.py",
+        data: {
+          name: $("input[name='name']").val(),
+          email: $("input[name='email']").val(),
+          testimonial: $("textarea[name='testimonial']").val(),
+          xhr: true
+        },
+        success: testimonialSuccess,
+        error: testimonialError
+      });
+      return false;
+    });
+  });
+</script>
+
+<div id="realbody">
+
+<h1>Give a testimonial!</h1>
+
+<iframe src="https://docs.google.com/forms/d/1RjJbywH26eRUQpplMC2eo5lOMM8ZkpyXSS3Rkg3qy1c/viewform?embedded=true" width="760" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+<!--<p>LU programs reach thousands of students each year. How have our programs affected you?  What has changed since attending them?  Your comments on our work help explain the value of our programs to funders and universities.</p>
+
+<div id="testimonialdiv">
+  <form action="/testimonial.py" method="post" id="testimonialform">
+    <p>Your name: <input type="text" name="name" /><br>
+    Your email address: <input type="text" name="email" /><br>
+    What impact has Splash/Cascade/HSSP or any LU program had on you or your community?<br>
+    <textarea name="testimonial" cols=80 rows=10></textarea><br>
+    <input type="submit" value="Testify!"/><img src="/media/images/content-pages/spinner.gif" valign="middle" style="display: none;" id="spinner" />
+    </p>
+  </form>
+</div>  
+-->
+</div>

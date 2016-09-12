@@ -1,0 +1,69 @@
+# Site settings
+# 
+# Since our theme is very homebrew, we don't really use all of the traditional
+# jekyll settings like title, they're just hardcoded in various places.  But
+# this has some options written by jekyll, and some global routing options.
+gems:
+  - jekyll-redirect-from
+
+markdown: kramdown
+permalink: pretty
+
+# We use collections to both do routing and to generate the navbar and some
+# other metadata.  Properties:
+#  * output, permalink: as specified by jekyll
+#  * title: the title to use as the default or suffix for pages, and as the
+#    navbar alt-text
+#  * nav: true to show the collection in the navbar, in which case it should
+#    have images in images/content-pages/navbar-links/<type>/<name>.gif for
+#    each type in "normal" (the usual gray), "current" (blue if we are in that
+#    section of the site), and "hover" (red on hover)
+#  * sep: true to show a sep after this item in the nav
+#  * br: true to put a line break after this item in the nav
+#  * url: if specified, link to this instead of our own pages.  In this case,
+#    output should likely be set to false.
+# Each page in the collection goes in the directory _<collection name> and
+# should have the following properties in the front matter:
+#  * layout: as specified by jekyll, likely "default"
+#  * title: as suggested by jekyll, also used in the navbar
+#  * permalink: as specified by jekyll; due to jekyll limitations, the
+#    index.html page for each collection MUST specify its permalink, including
+#    a trailing slash
+#  * redirect_from, redirect_to: as specified by jekyll-redirect-from
+#  * seq: set to a positive value (used as ordering) to show in the navbar
+# Pages not in any section should go in the "misc" collection, and should
+# likely specify a permalink.
+collections:
+  misc:  # TODO(benkraft): do we need this?
+    output: true
+    permalink: /:path/
+  about:
+    output: true
+    nav: true
+    sep: true
+    title: "About Learning Unlimited"
+  current-programs:
+    output: true
+    nav: true
+    sep: true
+    title: "Current Programs"
+  contact:
+    output: true
+    nav: true
+    br: true
+    title: "Contact"
+  becoming-a-chapter:
+    output: true
+    nav: true
+    sep: true
+    title: "Becoming a Chapter"
+  participate:
+    output: true
+    nav: true
+    sep: true
+    title: "Participate"
+  give:
+    output: false
+    nav: true
+    title: "Give"
+    url: https://donatenow.networkforgood.org/1442637

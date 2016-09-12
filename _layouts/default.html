@@ -1,0 +1,4 @@
+{% assign section = site.collections | where: "label", page.collection | first %}
+{% include header.html %}
+{{ content }}
+{% include footer.html %}

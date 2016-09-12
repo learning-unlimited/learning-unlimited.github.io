@@ -1,0 +1,30 @@
+---
+layout: default
+title: Thank you for giving to Learning Unlimited!
+---
+
+<div id="realbody">
+
+<h1>Thank you!</h1>
+
+<p>Learning Unlimited is supported by people like you who take the time to make a difference.  We will of course be thanking you personally for your generosity, but until then, please accept our thanks here.</p>
+
+<p>Have you subscribed to our mailing list?  It's the best way to hear more about our organization as we continue to grow:</p>
+
+<div id="mailing_list" style="margin-left: -1em;">
+	<form action="/signup/thanks" method="POST" name="email_form" id="email_form">
+	  <label for="email" style="">Sign up to receive our newsletter:</label>
+	  <input name="email" value="Your Email" onfocus="javascript:email=document.getElementById('email');email.value='';email.style.textAlign = 'left';email.style.color='#000000';" id="email" />
+	  <img src="/media/images/index/go-link/normal.gif" alt="Go" id="go_normal" usemap="#go_map" style="border:none"/>
+	  <img src="/media/images/index/go-link/hover.gif" alt="Go"  id="go_hover" usemap="#go_map"  style="border:none; display:none"/>
+	  <map name="go_map">
+	    <area shape="circle" coords="15,15,16" href="javascript:document.getElementById('email_form').submit()"
+		  alt="Go" onmouseover="javascript:hover_go()" onmouseout="javascript:make_normal()" />
+	  </map>
+	  <p style="text-align: right; margin-right: 6.8em">See our <a href="/privacy">Privacy Policy</a></p>
+	</form>
+</div>
+
+<p>If you would like to get in touch with us to learn more about our organization or to find other ways to help out, <a href="/contact">contact us</a> or visit our page on <a href="/how-to-help">how to help</a>.</p>
+
+</div>

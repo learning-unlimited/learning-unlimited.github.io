@@ -1,0 +1,74 @@
+---
+layout: default
+title: Help LU
+seq: 10
+permalink: /participate/
+redirect_from:
+  - /participate/participate/
+  - /help/
+---
+
+<div id="realbody">
+
+<h1>How Do I Get Involved?</h1>
+
+<div class="threecolbox">
+  <div class="colbox"><h2><a href="/participate/donate">Donate</a></h2>LU uses its funds to start new chapters and provide support and mentorship to existing programs.<br><a href="/participate/donate">Support our work by donating today.</a></div>
+  <div class="colbox"><h2><a href="/participate/testimonials">Give a Testimonial</a></h2>If you attended a program as a student or teacher, or have seen first-hand the impact LU programs can have, help us by <a href="/participate/testimonials">giving us a testimonial</a>.</div>
+  <div class="colbox"><h2><a href="/participate/volunteer_form">Volunteer</a></h2>Can you help LU or one of our local programs? <a href="/participate/volunteer_form">Tell us about it.</a></div>
+  <div class="clear"></div>
+</div>
+
+<p>Learning Unlimited is driven by its volunteers and supporters.  Like the student groups that run Splash and other programs across the country, we are a community of individuals working together to achieve great change.  There are many ways to get involved, and we hope that you'll join us as we bring more and more exciting learning and teaching opportunities to students everywhere!</p>
+
+      <script>
+        function set_div_class(className) {
+          document.getElementById("mailing_list").className = className;
+        }
+
+        function submit_email() {
+          var xhr = new XMLHttpRequest();
+          var email = document.getElementById("email_input").value;
+          var data = "ca=41d65ce9-d319-4b8b-a283-eda01fa6d10a&list=1&source=EFD&required=list,email&email=" + encodeURIComponent(email);
+          xhr.addEventListener("load", handle_load);
+          xhr.addEventListener("error", function() {set_div_class("error");});
+          xhr.open("POST", "https://visitor2.constantcontact.com/api/signup")
+          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+          xhr.setRequestHeader('Content-Length', data.length);
+          xhr.send(data);
+          set_div_class("submitted");
+        }
+
+        function handle_load() {
+          if (this.responseText && JSON.parse(this.responseText).success) {
+            set_div_class("success");
+          } else {
+            set_div_class("error");
+          }
+        }
+      </script>
+      <div id="mailing_list">
+        <label for="email">Sign up to receive monthly announcements and events:</label>
+        <input id="email_input" name="email" value="" maxlength="80" type="text" placeholder="your email">
+        <button class="go-button" type="submit" data-enabled="enabled" onclick="javascript:submit_email()">GO</button>
+      </div>
+
+<p>Read on to learn about <a href="/participate/volunteer">volunteer opportunities with LU</a>.</p>
+
+<table class="help_table">
+  <tr>
+    <td>
+      <span class="link"><a href="/contact"><img src="/media/images/content-pages/navbar-links/normal/contact.gif" alt="Contact" class="normal" style="border:none" /><img src="/media/images/content-pages/navbar-links/hover/contact.gif" alt="Contact" class="hover" style="border:none" /></a></span>
+    </td>
+    <td>
+      <span class="link"><a href="https://npo.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=1002168"><img src="/media/images/content-pages/navbar-links/normal/give.gif" alt="Give" class="normal" style="border:none" /><img src="/media/images/content-pages/navbar-links/hover/give.gif" alt="Give" class="hover" style="border:none" /></a></span>
+    </td>
+  </tr>
+  <tr>
+    <td>To volunteer or find out more</td>
+    <td>To help us in our work</td>
+  </tr>
+</table>
+
+
+</div>

@@ -1,0 +1,161 @@
+body
+{
+    background-color: white;
+    font-family: georgia, garamond, serif;
+    text-align: center;
+}
+
+div#content
+{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    position: relative;
+    text-align: center;
+}
+
+img#navbar_about_lu, img#navbar_current_programs, img#navbar_becoming_a_chapter, img#navbar_help_us_out, img#navbar_contact, img#give_hover, img#go_hover
+{
+    display: none;
+}
+
+img
+{
+    border: none;
+}
+
+div#logo img
+{
+    z-index: -1;
+}
+
+div#navbar
+{
+    z-index: 1;
+    position: absolute;
+    left: 260px;
+    top: 160px;
+}
+
+div#navbar img
+{
+    z-index: 1;
+    position: relative;
+}
+
+div#give
+{
+    z-index: 0;
+    width: 50px;
+    position: absolute;
+    left: 120px;
+    top: 320px;
+}
+
+div#news
+{
+    clear: both;
+    margin-top: 13em;
+    color: #767377;
+    text-align: center;
+    width: 910px;
+    margin-left: -6.5em;
+}
+
+div#news span.heading
+{
+    color: #E6504B;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div#news span.separator img
+{
+    margin-bottom: 0.3em;
+}
+
+div#news a:link, div#news a:visited
+{
+    color: #7F9FD2;
+    text-decoration: none;
+}
+
+div#news a:active, div#news a:hover
+{
+    color: #E6504B;
+}
+
+
+div#mailing_list
+{
+    color: #767377;
+    clear: both;
+    width: 730px;
+    text-align: center;
+    padding: none;
+    margin-left: -1em;
+    margin-top: 0.3em;
+}
+
+div#mailing_list label
+{
+    color: #E6504B;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div#mailing_list a:link, div#mailing_list a:visited
+{
+    color: #7F9FD2;
+    text-decoration: none;
+}
+
+div#mailing_list a:active, div#mailing_list a:hover
+{
+    color: #E6504B;
+}
+
+div#mailing_list input
+{
+    border: 1px solid #FFE200;
+    text-align: right;
+    max-width: 150px;
+    color: #767377;
+}
+
+#mailing_list.error input {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+#mailing_list.success input {
+    border: 1px solid #00ff00;
+    background-color: #eeffee;
+}
+
+button.go-button
+{
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 50%;
+    padding: 0px;
+    margin-left: 0.3em;
+    background-color: #7F9FD2;
+    color: #eee;
+}
+
+#mailing_list.submitted button.go-button {
+    background-color: #eee;
+}
+
+button.go-button:hover {
+    background-color: #e6504b;
+    cursor: pointer;
+}
+
+div#news, div#mailing_list
+{
+    font-size: 0.96em;
+}
