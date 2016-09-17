@@ -3,10 +3,7 @@
   {% for collection in sorted_collections %}
     {% if collection.nav %}
       <span class="link">
-        <a href="{% if collection.url %}{{collection.url}}{% else %}/{{ collection.label }}{% endif %}">
-          <img src="/media/images/content-pages/navbar-links/{% if collection.label == section.label %}current{% else %}normal{% endif %}/{{ collection.label }}.gif" alt="{{ collection.title }}" class="normal"/>
-          <img src="/media/images/content-pages/navbar-links/hover/{{ collection.label }}.gif" alt="{{ collection.title }}" class="hover"/>
-        </a>
+        <a href="{% if collection.url %}{{collection.url}}{% else %}/{{ collection.label }}{% endif %}"><img src="/media/images/content-pages/navbar-links/{% if collection.label == section.label %}current{% else %}normal{% endif %}/{{ collection.label }}.gif" alt="{{ collection.title }}" class="normal"/><img src="/media/images/content-pages/navbar-links/hover/{{ collection.label }}.gif" alt="{{ collection.title }}" class="hover"/></a>
       </span>
       {% if collection.sep %}
         <span class="separator">
