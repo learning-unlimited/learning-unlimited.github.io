@@ -1,6 +1,6 @@
 <html>
   <head>
-      <title>{% if page.title %} {{ page.title }}{% endif %}{% if page.title and section.title %} :: {% endif %}{% if section.title %}{{ section.title}}{% endif %}</title>
+      <title>{% if page.title and page.title != "Index" %} {{ page.title }}{% if section.title %} :: {% endif %}{% endif %}{% if section.title %}{{ section.title}}{% endif %}</title>
     <link rel="stylesheet" type="text/css" href="/media/css/content-pages.css" />
     <script type="text/javascript">
       function make_normal()
