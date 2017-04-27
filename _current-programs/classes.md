@@ -32,7 +32,7 @@ Students in this class learned about how to make very unique bikes. After an exp
 
 Have you ever wondered how you can image the atomic structure of materials? In this class you will learn how one basic concept of quantum mechanics allowed for the development of a state-of-the-art experimental technique, scanning tunneling microscopy, to do just this. This class will include a demonstration of Clark's newly acquired scanning tunneling microscope.*(Clark Splash, Fall 2012)*
 
-<div class="imagebox floatleft"></div><iframe width="520" height="315" src="http://www.youtube.com/embed/wUsTtoTHwWU" frameborder="0" allowfullscreen></iframe>
+<div class="imagebox floatleft"></div><iframe width="520" height="315" src="https://www.youtube.com/embed/wUsTtoTHwWU" frameborder="0" allowfullscreen></iframe>
 
 ### Science-Fiction's Most Important Character: HAL 9000
 
@@ -41,6 +41,6 @@ Science-fiction fans will enjoy and appreciate this presentation on the movie ch
 
 We could go on and on about the breadth, depth, and excellence of the classes LU programs offer --- but why not browse a few catalogs and see for yourself?
 
-- [MIT Splash 2015 Course Catalog](http://esp.mit.edu/learn/Splash/2015/catalog)
+- [MIT Splash 2015 Course Catalog](https://esp.mit.edu/learn/Splash/2015/catalog)
 - [Yale Splash Fall 2015 Course Catalog](https://yale.learningu.org/learn/Splash/2015_Fall/catalog)
 - [ClarkU ESP Splash Spring 2016 Course Catalog](https://clarkuesp.learningu.org/learn/Splash/2016_Spring/catalog)
