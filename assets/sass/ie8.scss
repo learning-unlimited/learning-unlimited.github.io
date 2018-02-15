@@ -1,28 +1,53 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'libs/skel';
 
 /*
-	Editorial by HTML5 UP
+	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Button */
+/* Basic */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		border: solid 2px _palette(accent);
+	form {
+		input[type=text],
+		input[type=password],
+		select,
+		textarea {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
 	}
 
-/* Posts */
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	button,
+	.button,
+	ul.social li a,
+	.icon.featured,
+	#copyright .links,
+	#nav > ul > li > a {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
 
-	.posts {
-		article {
-			width: 40%;
+/* Nav */
+
+	.dropotron {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&.level-0 {
+			box-shadow: none !important;
 		}
+	}
+
+/* Banner */
+
+	#banner {
+		background-position: auto;
+		background-size: contain;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 	}
