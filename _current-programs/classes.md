@@ -3,9 +3,14 @@ layout: default
 title: Our Classes
 seq: 30
 ---
+<div id="main-wrapper">
+          <div class="container">
 
-# LU Program Classes
 
+<section markdown="1">
+<header class="major">
+                      <h2>LU Program Classes</h2>
+                    </header>
 Classes at LU programs are generally mix of academic and non-academic topics generally not covered in mainstream educational curricula. For example, classes often cover advanced topics in math and physics; hands-on skills like making ice cream using liquid nitrogen; creative expression in hip-hop choreography; and cooking the cuisines of the world.
 
 ## Sample Class Descriptions
@@ -44,3 +49,6 @@ We could go on and on about the breadth, depth, and excellence of the classes LU
 - [MIT Splash 2015 Course Catalog](https://esp.mit.edu/learn/Splash/2015/catalog)
 - [Yale Splash Fall 2015 Course Catalog](https://yale.learningu.org/learn/Splash/2015_Fall/catalog)
 - [ClarkU ESP Splash Spring 2016 Course Catalog](https://clarkuesp.learningu.org/learn/Splash/2016_Spring/catalog)
+</section>
+</div>
+</div>

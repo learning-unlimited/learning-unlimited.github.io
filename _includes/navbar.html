@@ -5,6 +5,9 @@
             if ($(this).prop('href') == window.location.href) {
                 $(this).addClass("current"); $(this).parents('li').addClass("current");
             }
+            if ($(this).prop('href').split("/")[3] == window.location.pathname.split("/")[1]) {
+                $(this).addClass("current"); $(this).parents('li').addClass("current");
+            }            
         });
     });
 </script>
@@ -21,7 +24,7 @@
                   <li><a href="/index.html">Home</a></li>
                   <li>
                     <a href="/about/index.html">About LU</a>
-                    <ul>
+                   <!-- <ul>
                       <li><a href="#">Lorem ipsum dolor</a></li>
                       <li><a href="#">Magna phasellus</a></li>
                       <li><a href="#">Etiam dolore nisl</a></li>
@@ -36,10 +39,18 @@
                         </ul>
                       </li>
                       <li><a href="#">Veroeros feugiat</a></li>
-                    </ul>
+                    </ul>-->
                   </li>
                   <li><a href="/current-programs/index.html">Current Programs</a></li>
-                  <li><a href="/becoming-a-chapter/index.html">Becoming a Chapter</a></li>
+                  <li><a href="/becoming-a-chapter/index.html">Becoming a Chapter</a>
+                     <ul>
+                      <li><a href="/becoming-a-chapter/getting-started/">Getting Started</a></li>
+                      <li><a href="/becoming-a-chapter/how-we-help/">How We Help</a></li>
+                      <li><a href="/becoming-a-chapter/frequently-asked-questions/">Frequently Asked Questions</a></li>
+                     </ul>
+
+                  </li>
+
                   <li><a href="/participate/index.html">Participate</a></li>
                   <li><a href="/contact/index.html">Contact</a></li>
                 </ul>

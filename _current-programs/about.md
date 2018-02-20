@@ -4,7 +4,14 @@ title: About LU Programs
 seq: 10
 ---
 
-# Current Programs
+<div id="main-wrapper">
+          <div class="container">
+
+
+<section markdown="1">
+<header class="major">
+                      <h2>Current Programs</h2>
+                    </header>
 
 Learning Unlimited incubates and provides a national support structure for independent, college-student-led educational programs aimed at middle and high school students.
 
@@ -21,6 +28,7 @@ The MIT group, MIT ESP, also runs several other programs, including a summer int
 
 Find out about [where and when our programs run](/current-programs/when-and-where), or [read about some of the classes we offer](/current-programs/classes).
 
+</section>
 <script>
   function set_div_class(className) {
     document.getElementById("mailing_list").className = className;
@@ -51,4 +59,8 @@ Find out about [where and when our programs run](/current-programs/when-and-wher
   <label for="email">Sign up to receive monthly announcements and events:</label>
   <input id="email_input" name="email" value="" maxlength="80" type="text" placeholder="your email">
   <button class="go-button" type="submit" data-enabled="enabled" onclick="javascript:submit_email()">GO</button>
+</div>
+
+
+</div>
 </div>
