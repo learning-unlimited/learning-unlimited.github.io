@@ -1,0 +1,58 @@
+{
+  "items" : [
+     {
+      "date": "2018-01-04",
+      "program_name": "Splash at Berkeley Past",
+      "program_url": "https://berkeley.learningu.org/",
+      "subtext": "Already Happened"
+    },
+    {
+      "date": "2018-03-04",
+      "program_name": "Splash at Berkeley",
+      "program_url": "https://berkeley.learningu.org/",
+      "subtext": "None"
+    },
+       {
+      "date": "2018-03-05",
+      "program_name": "Splash at Yale",
+      "program_url": "https://Yale.learningu.org/",
+      "subtext": "Test"
+    },
+      {
+      "date": "2018-04-05",
+      "program_name": "Sprout at Yale Begins",
+      "program_url": "https://Yale.learningu.org/",
+      "subtext": "3 week-long program"
+    },
+           {
+      "date": "2018-06-09",
+      "program_name": "Splash at Oxford",
+      "program_url": "https://Yale.learningu.org/",
+      "subtext": "Test"
+    },
+      {
+      "date": "2018-09-06",
+      "program_name": "Splash at Yale Again",
+      "program_url": "https://Yale.learningu.org/",
+      "subtext": "None"
+    },
+      {
+      "date": "2018-10-06",
+      "program_name": "Splash at Yale Again",
+      "program_url": "https://Yale.learningu.org/",
+      "subtext": "None"
+    },
+      {
+      "date": "2018-09-06",
+      "program_name": "Splash at Yale Again",
+      "program_url": "https://Yale.learningu.org/",
+      "subtext": "None"
+    },
+      {
+      "date": "2018-09-06",
+      "program_name": "Splash at Yale Again",
+      "program_url": "https://Yale.learningu.org/",
+      "subtext": "None"
+    }
+  ]
+}
