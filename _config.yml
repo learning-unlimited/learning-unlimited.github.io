@@ -44,30 +44,51 @@ collections:
     nav: true
     sep: true
     title: "About Learning Unlimited"
+    subfolderitems:
+      - page: What We Do
+        url: /about/what-we-do/
+      - page: Results
+        url: /about/results/
+      - page: Who We Are
+        url: /about/who-we-are/
+      - page: Our Supporters
+        url: /about/supporters/
   current-programs:
     output: true
     seq: 20
     nav: true
     sep: true
     title: "Current Programs"
-  contact:
-    output: true
-    seq: 30
-    nav: true
-    br: true
-    title: "Contact"
+    subfolderitems:
+      - page: About Our Programs
+        url: /current-programs/about/
+      - page: Example Classes
+        url: /current-programs/classes/
   becoming-a-chapter:
     output: true
     seq: 40
     nav: true
     sep: true
     title: "Becoming a Chapter"
-  participate:
+    subfolderitems:
+      - page: Getting Started
+        url: /becoming-a-chapter/getting-started/
+      - page: How We Help
+        url: /becoming-a-chapter/how-we-help/
+      - page: Frequently Asked Questions
+        url: /becoming-a-chapter/frequently-asked-questions/
+  contact:
     output: true
     seq: 50
     nav: true
-    sep: true
-    title: "Participate"
+    br: true
+    title: "Contact"
+#  participate:
+#    output: true
+#    seq: 50
+#    nav: true
+#    sep: true
+#    title: "Participate"
   give:
     output: false
     seq: 60
