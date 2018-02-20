@@ -1,0 +1,117 @@
+
+<html>
+<!-- loadstorm-d24427ee8a -->
+  <head>
+    <title>Learning Unlimited</title>
+    <link rel="stylesheet" type="text/css" href="/media/css/index.css" />
+    <script type="text/javascript">
+      function make_normal()
+      {
+      document.getElementById("navbar_normal").style.display = "block";
+      document.getElementById("navbar_about_lu").style.display = "none";
+      document.getElementById("navbar_current_programs").style.display = "none";
+      document.getElementById("navbar_becoming_a_chapter").style.display = "none";
+      document.getElementById("navbar_help_us_out").style.display = "none";
+      document.getElementById("navbar_contact").style.display = "none";
+      document.getElementById("give_normal").style.display = "block";
+      document.getElementById("give_hover").style.display = "none";
+      }
+      
+      function set_navbar(new_id)
+      {
+      document.getElementById(new_id).style.display = "block";
+      document.getElementById("navbar_normal").style.display = "none";
+      }
+      function hover_give()
+      {
+      document.getElementById("give_hover").style.display = "block";
+      document.getElementById("give_normal").style.display = "none";
+      }
+    </script>
+  </head>
+  <body onload="javascript:make_normal()">
+
+    <div id="content">
+      
+      <div id="main">
+	<div id="logo"><img src="/media/images/index/logo.gif" alt="Learning Unlimited: Building excitement for teaching and learning" /></div>
+
+	<div id="navbar">
+	  <img src="/media/images/index/navbar-links/normal.gif" id="navbar_normal" usemap="#navbar_map"/>
+	  <img src="/media/images/index/navbar-links/about_lu.gif" id="navbar_about_lu"  usemap="#navbar_map"/>
+	  <img src="/media/images/index/navbar-links/current_programs.gif" id="navbar_current_programs"  usemap="#navbar_map"/>
+	  <img src="/media/images/index/navbar-links/becoming_a_chapter.gif" id="navbar_becoming_a_chapter"  usemap="#navbar_map"/>
+	  <img src="/media/images/index/navbar-links/help_us_out.gif" id="navbar_help_us_out"  usemap="#navbar_map"/>
+	  <img src="/media/images/index/navbar-links/contact.gif" id="navbar_contact"  usemap="#navbar_map"/>
+	  <map name="navbar_map">
+            <area shape="poly" coords="44,41,44,19,192,0,192,18,44,41" href="/about"
+		  alt="About LU" onmouseover="javascript:set_navbar('navbar_about_lu')" onmouseout="javascript:make_normal()" />
+            <area shape="poly" coords="40,51,40,70,354,104,354,80,40,51" href="/current-programs"
+		  alt="Current Programs" onmouseover="javascript:set_navbar('navbar_current_programs')" onmouseout="javascript:make_normal()" />
+            <area shape="poly" coords="40,77,34,100,354,220,354,198,40,77" href="/becoming-a-chapter"
+		  alt="Becoming a Chapter" onmouseover="javascript:set_navbar('navbar_becoming_a_chapter')" onmouseout="javascript:make_normal()" />
+            <area shape="poly" coords="26,105,16,122,175,235,188,220,26,105" href="/participate"
+		  alt="Help Us Out" onmouseover="javascript:set_navbar('navbar_help_us_out')" onmouseout="javascript:make_normal()" />
+            <area shape="poly" coords="4,130,0,138,0,150,76,245,95,245,102,240,4,130" href="/contact"
+		  alt="Contact" onmouseover="javascript:set_navbar('navbar_contact')" onmouseout="javascript:make_normal()" />
+	  </map>
+	</div>
+	
+	<div id="give">
+	  <img src="/media/images/index/give-link/normal.gif" alt="Give" id="give_normal" usemap="#give_map"/>
+	  <img src="/media/images/index/give-link/hover.gif" alt="Give" id="give_hover" usemap="#give_map"/>
+	  <map name="give_map">
+            <area shape="circle" coords="48,48,49" href="https://npo.networkforgood.org/Donate/Donate.aspx?npoSubscriptionId=1002168"
+		  alt="Give" onmouseover="javascript:hover_give()" onmouseout="javascript:make_normal()" />
+	  </map>
+	</div>
+      </div>
+
+      <div id="news">
+<a href="https://www.facebook.com/Learning-Unlimited-148451064087/"> Like us on Facebook to get the latest news!</a>
+      </div>
+
+      <script>
+        function set_div_class(className) {
+          document.getElementById("mailing_list").className = className;
+        }
+        function submit_email() {
+          var xhr = new XMLHttpRequest();
+          var email = document.getElementById("email_input").value;
+          var data = "ca=29b02609-39ba-4512-aa82-47f7c3303dff&list=1&source=EFD&required=list,email&email=" + encodeURIComponent(email);
+          xhr.addEventListener("load", handle_load);
+          xhr.addEventListener("error", function() {set_div_class("error");});
+          xhr.open("POST", "https://visitor2.constantcontact.com/api/signup")
+          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+          xhr.setRequestHeader('Content-Length', data.length);
+          xhr.send(data);
+          set_div_class("submitted");
+        }
+        function handle_load() {
+          if (this.responseText && JSON.parse(this.responseText).success) {
+            set_div_class("success");
+          } else {
+            set_div_class("error");
+          }
+        }
+      </script>
+      <div id="mailing_list">
+        <label for="email">Sign up to receive monthly announcements and events:</label>
+        <input id="email_input" name="email" value="" maxlength="80" type="text" placeholder="your email">
+        <button class="go-button" type="submit" data-enabled="enabled" onclick="javascript:submit_email()">GO</button>
+      </div>
+
+    </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ?  "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-11039829-1");
+	pageTracker._trackPageview();
+} catch(err) {}
+</script>
+  </body>
+</html>
