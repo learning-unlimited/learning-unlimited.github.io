@@ -1,0 +1,374 @@
+/*
+body
+{
+    background-color: white;
+    font-family: georgia, garamond, serif;
+    text-align: center;
+}
+
+div#content
+{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-right: 1em;
+}
+div#header
+{
+    text-align: left;
+}
+
+div#logo
+{
+    float: left;
+    margin: 0em 0.75em 0em 1em;
+    padding: 1em;
+}
+
+div#navbar
+{
+    padding-top: 0.1em;
+}
+
+div#navbar div
+{
+    margin-top: 0.9em;
+}
+
+div#navbar span.separator img
+{
+    margin-bottom: 0.4em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;    
+}
+
+div#header div.hr, div#footer div.hr
+{
+    clear: both;
+    background: white url("/media/images/content-pages/line.gif") center no-repeat;
+    height: 6px;
+    border: none;
+}
+
+div#header div.hr
+{
+    margin-bottom: 0.5em;
+}
+
+
+div#footer div.hr
+{
+    margin-top: 1.5em;
+}
+
+div#header div.hr hr, div#footer div.hr hr
+{
+    display: none;
+}
+
+div#header div#logo a img, div#header div#navbar a img
+{
+    border: none;
+}
+*/
+a:link img.normal, a:visited img.normal
+{
+    display: inline;
+}
+
+a:link img.hover, a:visited img.hover
+{
+    display: none;
+}
+
+a:active img.normal, a:hover img.normal
+{
+    display: none;
+}
+
+a:active img.hover, a:hover img.hover
+{
+    display: inline;
+}
+
+div.imagecaption {
+   font-style: italic;
+   font-size: 75%;
+}
+
+div.imagebox {
+   font-style: italic;
+   font-size: 75%;
+}
+
+div.floatleft {
+   float: left;
+   margin-right: 2em;
+   text-align: left;
+}
+
+div.floatright {
+   float: right;
+   margin-left: 2em;
+   text-align: right;
+}
+
+div.biobox {
+   margin-bottom: 2em;
+}
+
+div.clear {
+   clear: both;
+}
+
+div#programmap {
+   width: 700;
+   height: 438;
+   position: relative;
+}
+
+div#programmap img {
+   border: 0;
+}
+
+div#programmap table#maptable {
+   border: 1px solid gray;
+}
+
+div#programmap table#maptable td {
+   padding: 1em;
+   background: white;
+}
+
+div#programmap table#maptable td img#closebutton {
+   cursor: pointer;
+   float: right;
+}
+/*
+div#body
+{
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: #767377;
+}
+
+div#body div#realbody
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+div#body p.note
+{
+    font-style: italic;
+}
+
+div#body a
+{
+    color: #7F9FD2;
+    text-decoration: none;
+}
+*/
+h1, h2, h3
+{
+    color: #7F9FD2;
+    font-weight: bold;
+}
+
+h1
+{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+h2
+{
+    font-size: 1.2em;
+}
+/*
+div#body a:active, div#body a:hover
+{
+    color: #D35851;
+}
+*/
+/*
+div#subnavbar
+{
+    text-align: right;
+    padding-right: 1em;
+}
+
+div#subnavbar span.heading
+{
+    font-weight: bold;
+    color: #E6504B;
+    margin-right: 0.5em;
+}
+
+div#subnavbar span.separator img
+{
+    margin-bottom: 0.2em;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+div#subnavbar span.current a
+{
+    color: #E6504B;
+}
+
+div#footer
+{
+    padding-bottom: 0.5em;
+}
+
+div#footer img
+{
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.2em;
+}
+*/
+
+table.help_table
+{
+    margin: 1.1em auto 1.3em auto;
+    text-align: center;
+}
+
+table.help_table td
+{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+div#mailing_list
+{
+    color: #767377;
+    clear: both;
+    width: 730px;
+    text-align: center;
+    padding: none;
+    margin-left: -1em;
+    margin-top: 0.3em;
+}
+
+div#mailing_list label
+{
+    color: #E6504B;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div#mailing_list a:link, div#mailing_list a:visited
+{
+    color: #7F9FD2;
+    text-decoration: none;
+}
+
+div#mailing_list a:active, div#mailing_list a:hover
+{
+    color: #E6504B;
+}
+
+div#mailing_list input
+{
+    border: 1px solid #FFE200;
+    text-align: right;
+    max-width: 150px;
+    color: #767377;
+}
+
+#mailing_list.error input {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+#mailing_list.success input {
+    border: 1px solid #00ff00;
+    background-color: #eeffee;
+}
+
+button.go-button
+{
+    width: 2em;
+    height: 2em;
+    border: none;
+    border-radius: 50%;
+    padding: 0px;
+    margin-left: 0.3em;
+    background-color: #7F9FD2;
+    color: #eee;
+}
+
+#mailing_list.submitted button.go-button {
+    background-color: #eee;
+}
+
+button.go-button:hover {
+    background-color: #e6504b;
+    cursor: pointer;
+}
+
+div#news, div#mailing_list
+{
+    font-size: 0.96em;
+}
+
+/* for parents page */
+h3 {
+  font-weight: bold;
+  font-size: 100%;
+  margin-left: 0.5em;
+}
+table.schedule {
+  margin-left: 0.5em;
+}
+table.schedule td, table.schedule th {
+  padding-bottom: 1.5em;
+  vertical-align: top;
+  width: 25em;
+  font-weight: normal;
+  font-family: georgia, garamond, serif;
+  font-size: 16px;
+  color: rgb(118,115,119);
+}
+table.schedule th {
+  font-style: italic;
+  padding-right: 3em;
+  padding-left: 2em;
+  text-align: right;
+  width: auto;
+}
+table.subtable th {
+  padding: 0;
+  padding-right: 1em;
+  font-style: normal;
+  font-weight: bold;
+  text-align: left;
+}
+table.subtable td, table.subtable th {
+  padding-bottom: 1em;
+  width: auto;
+}
+table.subtable tr.last td, table.subtable tr.last th {
+  padding-bottom: 0.4em;
+}
+
+/* for participate page */
+div.threecolbox {
+   width: 700px;
+   margin-bottom: 1em;
+}
+
+div.colbox {
+   width: 193px;
+   float: left;
+   text-align: center;
+   padding: 20px;
+}
