@@ -8,16 +8,14 @@ seq: 10
 
 Learning Unlimited incubates and provides a national support structure for independent, college-student-led educational programs aimed at middle and high school students.
 
-**Splash** is by far the most common Learning Unlimited program; it's a weekend-long extravaganza of classes at a local college or university, where pre-college students are invited to **learn about everything and anything** from passionate university students. Splash currently runs at [MIT](https://esp.mit.edu/learn/Splash/index.html), at [Stanford University](https://stanfordesp.org/), at the [University of Chicago](https://splashchicago.learningu.org/), at [Duke University](https://dukesplash.learningu.org/), at [Yale University](https://yale.learningu.org/), at [Boston College](https://bcsplash.learningu.org), and many more! 
+**Splash** is by far the most common Learning Unlimited program; it's a weekend extravaganza of classes at a local college or university, where pre-college students are invited to **learn about everything and anything** from passionate university students. Splash currently runs at [MIT](https://esp.mit.edu/learn/Splash/index.html), at [Stanford University](https://stanfordesp.org/), at the [University of Chicago](https://splashchicago.learningu.org/), at [Duke University](https://dukesplash.learningu.org/), at [Yale University](https://yale.learningu.org/), at [Boston College](https://bcsplash.learningu.org), and many more! 
 
-**Take a look at our [map and calendar](/current-programs/when-and-where) for a complete list and to find a Splash near you!**
+**Take a look at our [map](/current-programs/when-and-where) for a complete list and to find a Splash near you!**
 
 <img src="/media/images/photos/mit-splash.jpg" width="700" height="226" alt="MIT Splash">
 <div class="imagecaption">MIT Splash 2008</div>
 
-Several groups also run a multi-week program, called [**Cascade** at Chicago](https://splashchicago.learningu.org/learn/cascade.html), [**Sprout** at Yale](https://yale.learningu.org/learn/sprout.html), and [**HSSP** at MIT](https://esp.mit.edu/learn/HSSP/index.html). This program has been going strong at MIT since 1957! HSSP classes are taught over several weeks, and cover material in greater depth than the typical Splash class.
-
-The MIT group, MIT ESP, also runs several other programs, including a summer intensive course program called **Junction**.
+Several groups also run a multi-week program, such as [**Cascade** at Chicago](https://splashchicago.learningu.org/learn/cascade.html), [**Sprout** at Yale](https://yale.learningu.org/learn/sprout.html), and [**HSSP** at MIT](https://esp.mit.edu/learn/HSSP/index.html). This program has been going strong at MIT since 1957! Classes at these programs are taught over several weeks, and cover material in greater depth than the typical Splash class.
 
 Find out about [where and when our programs run](/current-programs/when-and-where), or [read about some of the classes we offer](/current-programs/classes).
 
