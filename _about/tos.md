@@ -7,6 +7,7 @@ seq: 90
 # Learning Unlimited's Privacy Policy
 
 This privacy policy has been compiled to better inform those who are concerned with how their Personally Identifiable Information (PII) is being used online on all Learning Unlimited hosted websites (i.e. all websites ending with the learningu.org domain name). PII, as described in US privacy and information security law, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Our privacy policy describes how we collect, use, protect or otherwise handle your Personally Identifiable Information submitted to our website.
+
 We can be reached via email at info@learningu.org or you can reach us by telephone at 617-379-0178.
 
 ## What personal information do we collect from the people that visit our websites or register for supported programs?
