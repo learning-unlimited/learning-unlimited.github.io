@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Website Terms of Service
-seq: 10
+title: Terms of Service
+seq: 90
 ---
 
 # Learning Unlimited's Privacy Policy
