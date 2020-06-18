@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Terms of Service
+title: Privacy Policy
 seq: 90
 ---
 
