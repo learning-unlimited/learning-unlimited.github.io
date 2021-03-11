@@ -8,7 +8,12 @@ redirect_from:
 ---
 <!-- Wish these could be in head! -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" type="text/javascript" charset="utf-8"></script>
+<div class="qsd_view_visible prettify" id="inline_qsd_5780daf6">
+    <script src="https://kit.fontawesome.com/a30de12fa8.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <script type="text/javascript">
+
 function areaclick(areaname) {
   $('#mapinfocontent').html($('div#'+areaname).html());
   $('#maptable').show();
@@ -17,6 +22,7 @@ $(function() {
   $('#closebutton').click(function() { $('#maptable').hide() });
 });
 </script>
+
 <style>
 .upcoming-programs h2 {
   text-align: center;
@@ -25,115 +31,7 @@ $(function() {
   font-size: 120%;
   color: #666;
 }
-</style>
 
-<h1>LU Programs Around the Country</h1>
-
-<p>LU programs are currently running or starting up at over 30 universities in over 12 states and the District of Columbia, as well as one international program in the UK. Click on a program near you for more information.</p>
-
-<div id="programmap">
-  <div style="position: absolute;">
-    <img src="/media/images/photos/lu-map-UK.jpg" width="700" height="438" alt="Map" usemap="#areamap">
-    <map name="areamap"> <!-- map regions are northeast, midwest, midatlantic, south, west -->
-      <area shape="poly" coords="544,170,600,175,607,183,700,183,700,30,544,30" href="#" alt="Northeast" onclick="areaclick('northeast');">
-      <area shape="rect" coords="325,131,485,281" href="#" alt="Midwest" onclick="areaclick('midwest');">
-      <area shape="poly" coords="544,170,600,175,607,283,613,290,483,290" href="#" alt="Mid-atlantic" onclick="areaclick('midatlantic');">
-      <area shape="poly" coords="200,245,584,278,584,438,200,438" href="#" alt="South" onclick="areaclick('south');">
-      <area shape="rect" coords="0,0,180,350" href="#" alt="West" onclick="areaclick('west');">
-    </map>
-  </div>
-  <div style="position: absolute; width: 700px; top: 75px;">
-    <center>
-      <table id="maptable" style="display: none; width: 400px;" CELLPADDING=0 CELLSPACING=0 BORDER=0>
-        <tr><td><img id="closebutton" src="/media/images/content-pages/close-icon.gif" width="14" height="14" alt="Close"><div id="mapinfocontent"></div></td></tr>
-      </table>
-    </center>
-  </div>
-</div>
-
-<h2>Current Programs</h2>
-
-  <a href="https://cloud.learningu.org/">Rainstorm</a> is our online Splash program to facilitate the same excitement as our in-person programs during the COVID-19 pandemic.
-The program is run by student leaders at some of the following Splashes, as well as by the volunteer staff of Learning Unlimited.
-  <div id="northeast">
-
-<div class="upcoming-programs">
-    <div id="online">
-
-       <h2>Online Programs</h2>
-
-In spring of 2021, there are the following virtual Splashes. See their linked websites for details and how to sign up!
-  <li>3/13: <a href="https://berkeley.learningu.org/">Splash at Berkeley</a></li>
-  <li>3/13: <a href="https://granite.learningu.org/">Granite Hills Splash</a></li>
-  <li>3/13-3/27 (Saturdays): <a href="https://esp.mit.edu/">MIT Spark</a></li>
-  <li>3/28: <a href="https://bcsplash.learningu.org/">BC Splash</a></li>
-  <li>4/3: <a href="https://brandeis.learningu.org/">Brandeis University Splash </a></li>
-  <li>4/3: <a href="https://neptun.learningu.org/">Northeastern Splash</a></li>
-  <li>4/10: <a href="https://ricesplash.learningu.org/">Rice Splash</a></li>
-  <li>4/13 - 5/11 (Saturdays): <a href="https://splashchicago.learningu.org/">Splash Chicago</a></li>
-  <li>4/17: <a href="https://hopkins.learningu.org/">Johns Hopkins Splash</a></li>
-  <li>4/24: <a href="https://yale.learningu.org/">Yale Splash</a></li>
-  <li>5/1: <a href="https://cornell.learningu.org/">Cornell Splash</a></li>
-  <li>5/22: <a href="https://santaclarasplash.learningu.org/">Santa Clara Splash</a></li>
-  <li>5/22: <a href="https://ucsd.learningu.org/">UC San Diego Splash</a></li>
-  <li>TBA: <a href="https://cloud.learningu.org/">Rainstorm (multi-program) Splash</a></li>
-</div>
-    
-  <div id="northeast">
-  <h2>The Northeast</h2>
-  <li><a href="https://bcsplash.learningu.org/">Boston College Splash</a> in Chestnut Hill, MA</li>
-  <li><a href="https://brandeis.learningu.org/">Brandeis University Splash </a> in Waltham, MA</li>
-  <li><a href="https://clarkuesp.learningu.org/">Clark University ESP</a> in Worcester, MA</li>
-  <li><a href="https://columbia.learningu.org/">Columbia ESP</a> in New York, NY</li>
-  <li><a href="https://cornell.learningu.org/">Cornell Splash</a> in Ithaca, NY</li>
-  <li><a href="https://harvardsplash.learningu.org/">Harvard Splash</a> in Cambridge, MA</li>
-  <li><a href="https://esp.mit.edu/">MIT ESP</a> in Cambridge, MA</li>
-  <li><a href="https://neptun.learningu.org/">Northeastern University Neptun</a> in Boston, MA</li>
-  <li><a href="https://ursplash.learningu.org/">University of Rochester</a> in Rochester, NY</li>
-  <li><a href="https://yale.learningu.org/">Yale Splash</a> in New Haven, CT</li>
-  </div>
-
-  <div id="midwest">
-  <h2>The Midwest</h2>
-  <li><a href="https://splashchicago.learningu.org/">Splash Chicago</a> in Chicago, IL</li>
-  <li><a href="https://nusplash.learningu.org/">Splash at Northwestern</a> in Evanston, IL</li>
-  </div>
-
-  <div id="midatlantic">
-  <h2>The Mid-Atlantic</h2>
-  <li><a href="https://cmusplash.learningu.org/">Carnegie Mellon Splash</a> in Pittsburgh, PA</li>
-  <li><a href="https://dukesplash.learningu.org/">Duke Splash</a> in Durham, NC</li>
-  <li><a href="https://hopkins.learningu.org/">Johns Hopkins Splash</a>, in Baltimore, MD</li>
-  <li><a href="https://princeton.learningu.org/">Princeton Splash</a> in Princeton, NJ</li>
-  <li><a href="https://pennesp.learningu.org/">UPenn Splash</a> in Philadelphia, PA</li>
-  <li><a href="https://splashunc.com/">Splash UNC</a> in Chapel Hill, NC</li>
-  </div>
-
-  <div id="south">
-  <h2>The South</h2>
-  <li><a href="https://ricesplash.learningu.org/">Rice Splash</a> in Houston, TX</li>
-  </div>
-
-  <div id="west">
-  <h2>The West Coast</h2>
-  <li><a href="https://berkeley.learningu.org/">Splash at Berkeley</a> in Berkeley, CA</li>
-  <li><a href="https://claremont.learningu.org/">Claremont Colleges</a> in Claremont, CA</li>
-  <li><a href="https://granite.learningu.org/">Granite Hills High School S.T.I.N.G.</a> for middle school students in El Cajon, CA</li>
-  <li><a href="https://ucmsplash.learningu.org/">UC Merced Splash</a> in Merced, CA</li>
-  <li><a href="https://splashsc.learningu.org/">Splash SC</a>, in Los Angeles, CA</li>
-  <li><a href="https://santaclarasplash.learningu.org/">Santa Clara Splash</a>, in Santa Clara, CA</li>
-  <li><a href="https://stanfordesp.org/">Stanford ESP</a> in Palo Alto, CA</li>
-  <li><a href="https://splashatucla.learningu.org/">Splash at UCLA</a>, in Los Angeles, CA.</li>
-  </div>
-</div>
-
-<p> Don't see a Splash at your school? Click <a href="/becoming-a-chapter/create-a-new-splash">here</a> to start one. 
-  
-  
-<div class="qsd_view_visible prettify" id="inline_qsd_5780daf6">
-    <script src="https://kit.fontawesome.com/a30de12fa8.js" crossorigin="anonymous"></script>
-
-<style>
     .socials, .socials th, .socials td {
         border-bottom: 2px groove #526687;
         border-collapse: collapse;
@@ -190,7 +88,8 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
         width: 84px;
       }
       .site_button:hover {
-        background-color: #21272c;
+        background-color: #88a9e1;
+        box-shadow: 2px 2px #cacaca;
       }
       .social_button {
         border: none;
@@ -202,16 +101,127 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
         width: 40px;
       }
       .social_button:hover {
-        background-color: #21272c;
+        background-color: #88a9e1;
+        box-shadow: 2px 2px #cacaca;
       }
+	  
+	  h2 {
+	  font-family: Oswald, sans-seriff;
+	  font-size: 32px;
+	  text-align: center;
+	  letter-spacing: -1px;
+	  color:  #21272c;
+	  font-weight: 500px;
+	  }
+  
+  	.page-title {
+	  font-family: Oswald, sans-seriff;
+	  font-size: 32px;
+	  color:  #21272c;
+	  font-weight: 500px;
+	  }
+  
+  .words {
+    font-family: Montserrat, sans-seriff;
+  }
+  
+  	.checkout {
+	padding: 12px;
+  border: solid 2px #526687;
+  border-left: solid 18px #526687;
+	border-radius: 2px;
+  box-shadow: 2px 2px 2px #526687;
+	}
+	
+	.checkout:hover {
+  border: solid 2px #88a9e1;
+  border-left: solid 18px #88a9e1;
+  box-shadow: 2px 2px 2px #88a9e1;
+	}
+  
+  .caption {
+  font-family: Montserrat; sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  float: top;
+  text-align: center;
+  position: relative;
+  top: -20px;
+  letter-spacing: -0.03em;
+  }
+</div>
 </style>
 
-<p><br>
-<div style="font-family: Oswald, sans-seriff; font-size: 36px; text-align: center; letter-spacing: -1px; color:  #21272c; text-shadow: 1px 1px 1px #526687">
-    Want more Splash? We've got you covered!
+<h1 class="page-title">LU Programs Around the Country</h1>
+
+<p class="words">Learning Unlimited programs have run at nearly 50 universities and schools across 18 states, DC, and the United Kingdom. Click on a program near you for more information!</p>
+
+<div id="programmap">
+  <div style="position: absolute;">
+    <img src="/media/images/photos/lu-map-UK.jpg" width="700" height="438" alt="Map" usemap="#areamap">
+    <map name="areamap"> <!-- map regions are northeast, midwest, midatlantic, south, west -->
+      <area shape="poly" coords="544,170,600,175,607,183,700,183,700,30,544,30" href="#" alt="Northeast" onclick="areaclick('northeast');">
+      <area shape="rect" coords="325,131,485,281" href="#" alt="Midwest" onclick="areaclick('midwest');">
+      <area shape="poly" coords="544,170,600,175,607,283,613,290,483,290" href="#" alt="Mid-atlantic" onclick="areaclick('midatlantic');">
+      <area shape="poly" coords="200,245,584,278,584,438,200,438" href="#" alt="South" onclick="areaclick('south');">
+      <area shape="rect" coords="0,0,180,350" href="#" alt="West" onclick="areaclick('west');">
+    </map>
+  </div>
+  <div style="position: absolute; width: 700px; top: 75px;">
+    <center>
+      <table id="maptable" style="display: none; width: 400px;" CELLPADDING=0 CELLSPACING=0 BORDER=0>
+        <tr><td><img id="closebutton" src="/media/images/content-pages/close-icon.gif" width="14" height="14" alt="Close"><div id="mapinfocontent"></div></td></tr>
+      </table>
+    </center>
+  </div>
 </div>
-<br><br><br>
-<div>
+
+<div class="upcoming-programs">
+    <div id="online">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       <h2>Online Programs</h2>
+
+<div class="words"><p>In spring of 2021, the following virtual Splash programs are on offer. See their linked websites for details and how to sign up!<p>
+  <li>3/13: <a href="https://berkeley.learningu.org/">Splash at Berkeley</a></li>
+  <li>3/13: <a href="https://granite.learningu.org/">Granite Hills Splash</a></li>
+  <li>3/13-3/27 (Saturdays): <a href="https://esp.mit.edu/">MIT Spark</a></li>
+  <li>3/28: <a href="https://bcsplash.learningu.org/">BC Splash</a></li>
+  <li>4/3: <a href="https://brandeis.learningu.org/">Brandeis University Splash </a></li>
+  <li>4/3: <a href="https://neptun.learningu.org/">Northeastern Splash</a></li>
+  <li>4/10: <a href="https://ricesplash.learningu.org/">Rice Splash</a></li>
+  <li>4/13 - 5/11 (Saturdays): <a href="https://splashchicago.learningu.org/">Splash Chicago</a></li>
+  <li>4/17: <a href="https://hopkins.learningu.org/">Johns Hopkins Splash</a></li>
+  <li>4/24: <a href="https://yale.learningu.org/">Yale Splash</a></li>
+  <li>5/1: <a href="https://cornell.learningu.org/">Cornell Splash</a></li>
+  <li>5/15-5/16: <a href="https://cloud.learningu.org/">Rainstorm (multi-program) Splash</a></li>
+  <li>5/22: <a href="https://santaclarasplash.learningu.org/">Santa Clara Splash</a></li>
+  <li>5/22: <a href="https://ucsd.learningu.org/">UC San Diego Splash</a></li></div>
+</div>
+
+<h2>Current Programs</h2>
+  
+<div>    
+<table style="margin: auto; width: 50%; padding: 16px;">
+    <tbody>
+        <tr>
+            <td style="width: 50%; text-align: center; padding-bottom: 20px;">
+				<button type="button" class="checkout">
+				<a href="https://cloud.learningu.org/" target="_blank">
+					<img src="https://cloud.learningu.org/media/images/rainstorm_spring_2021.png" alt="LU Cloud" style="height: 100px;">
+            </td>
+             <td style="width: 50%;">
+                <p class="caption">Check out Rainstorm, a free online Splash program offered twice a year by volunteers of Learning Unlimited!</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+  <div id="northeast">
+  <h2>The Northeast</h2>
+  </div>
+  
+  <div>
     <table class="socials">
         <tbody>
             <tr>
@@ -290,104 +300,7 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
                 <td><br></td>
                 <td><br></td>
             </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/cmu.png">
-                </td>
-                <td>
-                    <h1>
-                        CMU Splash
-                    </h1>
-                    <p>
-                        Pittsburgh, PA
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://cmusplash.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:cmusplash@andrew.cmu.edu">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-                <td><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/chicago.png">
-                </td>
-                <td>
-                    <h1>
-                        Splash! Chicago
-                    </h1>
-                    <p>
-                        Chicago, IL
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://splashchicago.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/splashchicago/">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.instagram.com/splashchicago/">
-          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://twitter.com/splashchicago">
-          <i class="fab fa-twitter fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:splashchicago@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/claremont.png">
-                </td>
-                <td>
-                    <h1>
-                        Claremont Splash
-                    </h1>
-                    <p>
-                        Claremont, CA
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://claremont.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/claremontsplash">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:claremontsplash@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
+			          <tr>
                 <td>
                     <img class="splash_logo" src="https://clarkuesp.learningu.org/media/images/theme/logo.png">
                 </td>
@@ -492,69 +405,7 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
           <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
     </button><br></td>
             </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://dukesplash.learningu.org/media/images/theme/logo.png">
-                </td>
-                <td>
-                    <h1>
-                        Duke Splash
-                    </h1>
-                    <p>
-                        Durham, NC
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://dukesplash.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/DukeSplash">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.instagram.com/dukesplash">
-          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:splash@duke.edu">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/granite.png">
-                </td>
-                <td>
-                    <h1>
-                        Granite Hills Sting
-                    </h1>
-                    <p>
-                        El Cajon, CA
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://granite.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:granite.sting@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-                <td><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
+			         <tr>
                 <td>
                     <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/harvard.png">
                 </td>
@@ -580,37 +431,6 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
                 <td>
                     <button type="button" class="social_button">
         <a href="mailto:splashharvard@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/jhu.png">
-                </td>
-                <td>
-                    <h1>
-                        JHU Splash
-                    </h1>
-                    <p>
-                        Baltimore, MD
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://hopkins.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/JHUSplash">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:jhusplash@gmail.com">
           <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
          </button><br></td>
                 <td><br></td>
@@ -694,7 +514,119 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
           <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
     </button><br></td>
             </tr>
+			            <tr>
+                <td>
+                    <img class="splash_logo" src="https://ursplash.learningu.org/media/images/theme/logo.png">
+                </td>
+                <td>
+                    <h1>
+                        UR Splash
+                    </h1>
+                    <p>
+                        Rochester, NY
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://ursplash.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:rochestersplash@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+                <td><br></td>
+                <td><br></td>
+            </tr>
+			           <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/yale.png">
+                </td>
+                <td>
+                    <h1>
+                        Yale Splash
+                    </h1>
+                    <p>
+                        New Haven, CT
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://yale.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/yalesplash">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.instagram.com/yalesplash">
+          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:yalesplash@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+            </tr></tbody></table>
+
+  <div id="midwest">
+  <h2>The Midwest</h2>
+  
+      <table class="socials">
+        <tbody>
             <tr>
+                <th><br></th>
+                <th style="padding-right: 32px;">Program</th>
+                <th>Website</th>
+                <th colspan="4">Social Media</th>
+				           <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/chicago.png">
+                </td>
+                <td>
+                    <h1>
+                        Splash! Chicago
+                    </h1>
+                    <p>
+                        Chicago, IL
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://splashchicago.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/splashchicago/">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.instagram.com/splashchicago/">
+          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://twitter.com/splashchicago">
+          <i class="fab fa-twitter fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:splashchicago@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+            </tr>
+			          <tr>
                 <td>
                     <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/northwestern.png">
                 </td>
@@ -728,8 +660,114 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
           <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
          </button><br></td>
                 <td><br></td>
+            </tr></tbody></table>
+  </div>
+
+  <div id="midatlantic">
+  <h2>The Mid-Atlantic</h2>
+
+  
+      <table class="socials">
+        <tbody>
+            <tr>
+                <th><br></th>
+                <th style="padding-right: 32px;">Program</th>
+                <th>Website</th>
+                <th colspan="4">Social Media</th>
+				           <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/cmu.png">
+                </td>
+                <td>
+                    <h1>
+                        CMU Splash
+                    </h1>
+                    <p>
+                        Pittsburgh, PA
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://cmusplash.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:cmusplash@andrew.cmu.edu">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+                <td><br></td>
+                <td><br></td>
+            </tr>
+			          <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/jhu.png">
+                </td>
+                <td>
+                    <h1>
+                        JHU Splash
+                    </h1>
+                    <p>
+                        Baltimore, MD
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://hopkins.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/JHUSplash">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:jhusplash@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+                <td><br></td>
             </tr>
             <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/upenn.png">
+                </td>
+                <td>
+                    <h1>
+                        UPenn Splash
+                    </h1>
+                    <p>
+                        Philadelphia, PA
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://pennesp.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/splashpenn">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.instagram.com/pennesp">
+          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:pennesp@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+            </tr>
+			           <tr>
                 <td>
                     <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/princeton.png">
                 </td>
@@ -759,8 +797,90 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
          </button><br></td>
                 <td><br></td>
                 <td><br></td>
-            </tr>
+            </tr></tbody></table>
+  </div>
+
+  <div id="south">
+  <h2>The South</h2>
+  
+      <table class="socials">
+        <tbody>
             <tr>
+                <th><br></th>
+                <th style="padding-right: 32px;">Program</th>
+                <th>Website</th>
+                <th colspan="4">Social Media</th>
+              			          <tr>
+                <td>
+                    <img class="splash_logo" src="https://dukesplash.learningu.org/media/images/theme/logo.png">
+                </td>
+                <td>
+                    <h1>
+                        Duke Splash
+                    </h1>
+                    <p>
+                        Durham, NC
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://dukesplash.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/DukeSplash">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.instagram.com/dukesplash">
+          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:splash@duke.edu">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+            </tr>
+          			            <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/unc.png">
+                </td>
+                <td>
+                    <h1>
+                        Splash UNC
+                    </h1>
+                    <p>
+                        Chapel Hill, NC
+                    </p>
+                </td>
+                <td>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/splashunc">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.instagram.com/splashunc/">
+          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://twitter.com/splashunc">
+          <i class="fab fa-twitter fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:admin@splashunc.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+            </tr>
+				          <tr>
                 <td>
                     <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/ricec.png">
                 </td>
@@ -790,8 +910,114 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
          </button><br></td>
                 <td><br></td>
                 <td><br></td>
-            </tr>
+            </tr></tbody></table>
+  </div>
+
+  <div id="west">
+  <h2>The West Coast</h2>
+
+  
+      <table class="socials">
+        <tbody>
             <tr>
+                <th><br></th>
+                <th style="padding-right: 32px;">Program</th>
+                <th>Website</th>
+                <th colspan="4">Social Media</th>
+				         <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/berkeley.png">
+                </td>
+                <td>
+                    <h1>
+                        Berkeley Splash
+                    </h1>
+                    <p>
+                        Berkeley, CA
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://berkeley.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/BerkeleySplash/">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.instagram.com/splash.berkeley">
+          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:splash.berkeley@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+            </tr>
+				           <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/claremont.png">
+                </td>
+                <td>
+                    <h1>
+                        Claremont Splash
+                    </h1>
+                    <p>
+                        Claremont, CA
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://claremont.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="https://www.facebook.com/claremontsplash">
+          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:claremontsplash@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+    </button><br></td>
+                <td><br></td>
+                <td><br></td>
+            </tr>
+			           <tr>
+                <td>
+                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/granite.png">
+                </td>
+                <td>
+                    <h1>
+                        Granite Hills Sting
+                    </h1>
+                    <p>
+                        El Cajon, CA
+                    </p>
+                </td>
+                <td>
+                    <button type="button" class="site_button">
+        <a href="https://granite.learningu.org/">
+          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
+      </button>
+                    <br></td>
+                <td>
+                    <button type="button" class="social_button">
+        <a href="mailto:granite.sting@gmail.com">
+          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
+         </button><br></td>
+                <td><br></td>
+                <td><br></td>
+                <td><br></td>
+            </tr>
+			            <tr>
                 <td>
                     <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/santa_clara.png">
                 </td>
@@ -857,41 +1083,7 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
          </button><br></td>
                 <td><br></td>
             </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/berkeley.png">
-                </td>
-                <td>
-                    <h1>
-                        Berkeley Splash
-                    </h1>
-                    <p>
-                        Berkeley, CA
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://berkeley.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/BerkeleySplash/">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.instagram.com/splash.berkeley">
-          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:splash.berkeley@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-            </tr>
+   
             <tr>
                 <td>
                     <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/uc_merced.png">
@@ -950,104 +1142,7 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
                 <td><br></td>
                 <td><br></td>
             </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/unc.png">
-                </td>
-                <td>
-                    <h1>
-                        Splash UNC
-                    </h1>
-                    <p>
-                        Chapel Hill, NC
-                    </p>
-                </td>
-                <td>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/splashunc">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.instagram.com/splashunc/">
-          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://twitter.com/splashunc">
-          <i class="fab fa-twitter fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:admin@splashunc.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/upenn.png">
-                </td>
-                <td>
-                    <h1>
-                        UPenn Splash
-                    </h1>
-                    <p>
-                        Philadelphia, PA
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://pennesp.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/splashpenn">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.instagram.com/pennesp">
-          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:pennesp@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://ursplash.learningu.org/media/images/theme/logo.png">
-                </td>
-                <td>
-                    <h1>
-                        UR Splash
-                    </h1>
-                    <p>
-                        Rochester, NY
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://ursplash.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:rochestersplash@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-                <td><br></td>
-                <td><br></td>
-            </tr>
-            <tr>
+			          <tr>
                 <td>
                     <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/splash_sc.png">
                 </td>
@@ -1077,43 +1172,13 @@ In spring of 2021, there are the following virtual Splashes. See their linked we
          </button><br></td>
                 <td><br></td>
                 <td><br></td>
-            </tr>
-            <tr>
-                <td>
-                    <img class="splash_logo" src="https://cloud.learningu.org/media/images/chapter_logos/yale.png">
-                </td>
-                <td>
-                    <h1>
-                        Yale Splash
-                    </h1>
-                    <p>
-                        New Haven, CT
-                    </p>
-                </td>
-                <td>
-                    <button type="button" class="site_button">
-        <a href="https://yale.learningu.org/">
-          <i class="fas fa-external-link-alt fa-2x" style="color: white;" aria-hidden="true"></i></a>
-      </button>
-                    <br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.facebook.com/yalesplash">
-          <i class="fab fa-facebook fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="https://www.instagram.com/yalesplash">
-          <i class="fab fa-instagram fa-2x" style="color: white;" aria-hidden="true"></i></a>
-    </button><br></td>
-                <td>
-                    <button type="button" class="social_button">
-        <a href="mailto:yalesplash@gmail.com">
-          <i class="far fa-envelope fa-2x" style="color: white;" aria-hidden="true"></i></a>
-         </button><br></td>
-                <td><br></td>
-            </tr>
-        </tbody>
-    </table>
-</div></p>
+            </tr></tbody></table>
+  </div>
+</div>
+<br>
+<p class="words" style="text-align: center; font-size: 18px;"> Don't see a Splash at your school? Click <a href="/becoming-a-chapter/create-a-new-splash">here</a> to start one. 
+  <br>
+
+<br><br><br>
+
 </div>
