@@ -1,7 +1,7 @@
 body
 {
     background-color: white;
-    font-family: georgia, garamond, serif;
+    font-family: montserrat, sans-serif;
     text-align: center;
 }
 
@@ -176,6 +176,7 @@ h1, h2
 {
     color: #7F9FD2;
     font-weight: bold;
+	font-family: oswald, sans-serif;
 }
 
 h1
