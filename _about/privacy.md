@@ -20,7 +20,7 @@ We collect information from you when you register on our site, subscribe to a ne
 
 ## How do we use your information?
 
-The information we collect through our site registration process is used to support programs and activities conducted by Learning Unlimited (LU) and its member organizations. Additionally, it is used to improve these programs,to improve the content of our websites and to contact users about LU activities and programs run by members of LU.
+The information we collect through our site registration process is used to support programs and activities conducted by Learning Unlimited (LU) and its member organizations. Additionally, it is used to improve these programs, to improve the content of our websites, and to contact users about LU activities and programs run by members of LU.
 
 We may share or publish anonymous information (such as data from surveys) and anonymized aggregate information (such as the number of members on various mailing lists), for any purposes that further LU's mission. We will never share information that could be used to identify a particular person (including their email address, mailing address, or phone number) without their consent. We will never sell or rent any PII.
 
