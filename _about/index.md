@@ -9,7 +9,7 @@ redirect-from:
 
 # About Learning Unlimited
 
-Learning Unlimited was founded in 2007 by a group of alumni who had been involved with Splash at MIT and wanted to make educational opportunities more readily available for all students. With the mission of creating educational opportunities for high school and middle school students, and to provide leadership and teaching opportunities for college students' Learning Unlimited strives to engage students of all ages in an educational setting to share and discover their passions. We accomplish our mission through our core values:
+Learning Unlimited was founded in 2007 by a group of alumni who had been involved with Splash at MIT and Stanford, and wanted to make educational opportunities more readily available for all students. With the mission of creating educational opportunities for high school and middle school students, and to provide leadership and teaching opportunities for college students' Learning Unlimited strives to engage students of all ages in an educational setting to share and discover their passions. We accomplish our mission through our core values:
 
 ## Choice
 
