@@ -1,0 +1,16 @@
+---
+layout: default
+title: Create a New Splash
+---
+
+# Create a New Splash!
+
+<iframe 
+  src="https://docs.google.com/forms/d/1WgjrjMsGmlyGoJZje7XAhhDJUO0XlznyZWU0g3lmXDo/viewform?embedded=true"
+  width="760"
+  height="900"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0">
+  Loading...
+</iframe>
