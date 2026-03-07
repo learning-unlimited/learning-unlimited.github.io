@@ -12,6 +12,14 @@ div#content
     margin-right: auto;
     text-align: center;
     padding-right: 1em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div#body
+{
+    flex: 1;
 }
 
 div#header
