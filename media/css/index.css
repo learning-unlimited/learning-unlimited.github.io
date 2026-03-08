@@ -474,7 +474,7 @@ section {
 }
 
 .about-section {
-  padding: 100px 0;
+  padding: 20px 0;
   background: var(--white);
 }
 
@@ -716,9 +716,9 @@ section {
   flex-shrink: 0;
 }
 
-.chapter-step-title {
+.step-title {
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 700;
   color: var(--dark);
   margin-bottom: 4px;
