@@ -20,10 +20,12 @@ loadComponent("./Components/HeroSection.html", "hero-section");
 loadComponent("./Components/About.html", "about-section");
 loadComponent("./Components/Luworking.html", "working-lu");
 loadComponent("./Components/Lustartchapter.html", "start-chapter");
-loadComponent("./Components/Footer.html", "footer");
 
-let insertDate = document.getElementById("getfullyear");
+loadComponent("./Components/Footer.html", "footer" , ()=>{
+  
+  let insertDate = document.getElementById("getfullyear");
 
-if (insertDate) {
-  insertDate.textContent = new Date().getFullYear();
-}
+  if (insertDate) {
+    insertDate.textContent = new Date().getFullYear();
+  }
+});
