@@ -51,6 +51,24 @@ div#header div.hr, div#footer div.hr
     border: none;
 }
 
+.footer-contact {
+  text-align: center;
+  font-size: 14px;       
+  letter-spacing: 2px;
+  color: #6a7fa0;
+  margin: 18px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-contact a {
+  color: #6a7fa0;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #e6504b;
+}
+
 div#header div.hr
 {
     margin-bottom: 0.5em;
