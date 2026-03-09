@@ -928,7 +928,7 @@ footer::before {
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
   .nav-links { display: none; }
-  .hero { padding: 100px 20px 60px; }
+  .hero {height: 80vh; padding: 100px 20px 60px; }
   .section-inner { padding: 0 20px; }
   .programs-grid { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
