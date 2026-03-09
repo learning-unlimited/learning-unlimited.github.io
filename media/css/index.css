@@ -176,12 +176,12 @@ nav.scrolled {
 .btn-primary {
   background: var(--accent);
   color: white;
-  box-shadow: 0 4px 16px rgba(232, 93, 38, 0.28);
+  box-shadow: #7E94D4;
 }
 
 .btn-primary:hover {
   background: var(--accent-light);
-  box-shadow: 0 6px 24px rgba(232, 93, 38, 0.38);
+  box-shadow: #e85d26;
   transform: translateY(-1px);
 }
 
@@ -745,7 +745,7 @@ section {
   right: -80px;
   width: 280px;
   height: 280px;
-  background: radial-gradient(circle, rgba(232,93,38,0.25) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(214, 112, 29, 0.25) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -756,7 +756,7 @@ section {
   left: -60px;
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(15,107,107,0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(185, 99, 28, 0.2) 0%, transparent 70%);
   pointer-events: none;
 }
 
