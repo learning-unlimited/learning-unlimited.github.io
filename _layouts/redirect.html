@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  {% assign redirect_url = page.redirect.to | default: page.redirect_to | absolute_url %}
+  <meta http-equiv="refresh" content="0; url={{ redirect_url }}">
+  <link rel="canonical" href="{{ redirect_url }}">
+  <meta name="robots" content="noindex">
+  <title>Redirecting…</title>
+  <script>location = "{{ redirect_url }}";</script>
+</head>
+<body>
+  <p>Redirecting… <a href="{{ redirect_url }}">Click here if you are not redirected.</a></p>
+</body>
+</html>
