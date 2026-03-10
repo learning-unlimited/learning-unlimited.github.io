@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -28,7 +28,7 @@
   --radius-lg: 24px;
   --radius-xl: 40px;
   --font-display: 'Bricolage Grotesque', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-body: 'Nunito', sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -38,6 +38,7 @@ html {
 
 body {
   font-family: var(--font-body);
+  font-weight: 400;
   background: var(--white);
   color: var(--dark);
   overflow-x: hidden;
@@ -101,6 +102,7 @@ nav.scrolled {
 .nav-logo-text{
   color: #0d0d0d;
   font-weight: 600;
+  font-size: x-large;
 }
 
 .nav-logo-img {
@@ -127,6 +129,7 @@ nav.scrolled {
 .nav-links a{
     text-decoration:none;
     color:black;
+    font-weight: 500;
 }
 
 .hamburger{
@@ -144,7 +147,7 @@ nav.scrolled {
   border-radius: 100px;
   font-family: var(--font-body);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   text-decoration: none;
   border: none;
@@ -325,7 +328,7 @@ nav.scrolled {
 .hero-subtitle {
   font-size: clamp(17px, 2.2vw, 20px);
   color: var(--mid);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.65;
   max-width: 560px;
   margin: 0 auto 40px;
@@ -373,7 +376,7 @@ nav.scrolled {
 .proof-stat span {
   font-size: 13px;
   color: var(--muted);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @keyframes fadeUp {
@@ -440,7 +443,7 @@ section {
   align-items: center;
   gap: 8px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--accent);
@@ -468,7 +471,7 @@ section {
 .section-body {
   font-size: 17px;
   color: var(--mid);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.7;
   max-width: 520px;
 }
@@ -769,7 +772,7 @@ section {
   border: 1px solid rgba(232,93,38,0.2);
   border-radius: 100px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--accent-light);
   letter-spacing: 1px;
   text-transform: uppercase;
