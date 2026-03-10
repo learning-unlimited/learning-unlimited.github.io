@@ -1,0 +1,38 @@
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+
+  <a href="/" class="nav-logo">
+    <img
+      src="/media/images/favicon.ico"
+      alt="Learning Unlimited logo"
+      onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';"
+    >
+    <div id="logo-fallback" class="nav-logo-mark" style="display:none">LU</div>
+    <span class="nav-logo-text">Learning Unlimited</span>
+  </a>
+
+  <button
+    class="hamburger"
+    id="hamburger"
+    aria-controls="nav-links"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >☰</button>
+ 
+  <ul class="nav-links" id="nav-links" role="list">
+    <li><a href="/about"               {% if page.url contains '/about'               %}class="nav-active"{% endif %}>About LU</a></li>
+    <li><a href="/current-programs"    {% if page.url contains '/current-programs'    %}class="nav-active"{% endif %}>Current Programs</a></li>
+    <li><a href="/becoming-a-chapter"  {% if page.url contains '/becoming-a-chapter'  %}class="nav-active"{% endif %}>Becoming a Chapter</a></li>
+    <li><a href="/participate"         {% if page.url contains '/participate'         %}class="nav-active"{% endif %}>Participate</a></li>
+    <li><a href="/contact"             {% if page.url contains '/contact'             %}class="nav-active"{% endif %}>Contact</a></li>
+    <li>
+      <a
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53TD5UYZ9LVXY&source=url"
+        class="btn btn-primary"
+        target="_blank"
+        rel="noopener"
+        style="color:white;background:var(--lu-accent);"
+      >Donate ↗</a>
+    </li>
+  </ul>
+
+</nav>

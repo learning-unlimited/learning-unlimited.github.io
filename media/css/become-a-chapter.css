@@ -1,0 +1,294 @@
+/* ── CHAPTER INDEX — nav cards ───────────────────────────────────── */
+
+.chapter-nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.chapter-nav-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  text-decoration: none;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+.chapter-nav-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--lu-accent-border);
+  transform: translateY(-4px);
+}
+
+.chapter-nav-icon {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.chapter-nav-label {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--lu-accent);
+}
+
+.chapter-nav-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+
+.chapter-nav-desc {
+  font-size: 13px;
+  color: var(--mid);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.chapter-nav-arrow {
+  font-size: 18px;
+  color: var(--lu-accent);
+  font-weight: 700;
+  margin-top: 8px;
+  transition: transform 0.2s;
+}
+
+.chapter-nav-card:hover .chapter-nav-arrow {
+  transform: translateX(4px);
+}
+
+
+/* ── GETTING STARTED — numbered steps ────────────────────────────── */
+
+.chapter-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 48px;
+}
+
+.chapter-step-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.chapter-step-item:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--lu-accent-border);
+}
+
+.chapter-step-number {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--lu-accent-muted);
+  border: 1px solid var(--lu-accent-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--lu-accent);
+  letter-spacing: -0.5px;
+}
+
+.chapter-step-body h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+  margin: 0 0 10px;
+}
+
+.chapter-step-body p {
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.chapter-step-body p strong {
+  color: var(--dark);
+}
+
+
+/* ── HOW WE HELP — benefit cards ─────────────────────────────────── */
+
+.help-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.help-card {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.help-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--lu-accent-border);
+  transform: translateY(-4px);
+}
+
+.help-card-icon {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.help-card h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.3px;
+  margin: 0 0 10px;
+}
+
+.help-card p {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* ── FAQ — accordion-style items ─────────────────────────────────── */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.faq-item {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.faq-item:hover {
+  border-color: var(--lu-accent-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-q {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.3px;
+  padding: 22px 28px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.faq-q::before {
+  content: 'Q';
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: var(--lu-accent-muted);
+  border: 1px solid var(--lu-accent-border);
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--lu-accent);
+  margin-right: 12px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.faq-a {
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.8;
+  padding: 20px 28px;
+}
+
+
+/* ── SHARED page footer prose (used across getting-started, faq) ─── */
+
+.chapter-page-footer {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.8;
+}
+
+.chapter-page-footer p {
+  margin-bottom: 12px;
+}
+
+.chapter-page-footer a {
+  color: var(--lu-accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--lu-accent-border);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.chapter-page-footer a:hover {
+  color: var(--dark);
+  border-color: var(--dark);
+}
+
+
+/* ── GOOGLE FORM embed ───────────────────────────────────────────── */
+
+.embed-frame-block {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.embed-frame-block iframe {
+  display: block;
+  width: 100%;
+  border-radius: 14px;
+}
+
+
+/* ── RESPONSIVE ──────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .chapter-nav-cards  { grid-template-columns: 1fr; }
+  .help-cards-grid    { grid-template-columns: 1fr; }
+  .chapter-step-item  { flex-direction: column; }
+  .chapter-step-number { width: 40px; height: 40px; font-size: 14px; }
+  .embed-frame-block iframe { height: 600px; }
+}

@@ -1,0 +1,406 @@
+/* ── PROGRAMS MAP PAGE ────────────────────────────────────────────── */
+
+.programs-wrap {
+  max-width: 960px;
+}
+
+/* Map container — preserves original absolute-positioned image+table */
+.programs-map-block {
+  position: relative;
+  width: 700px;
+  height: 438px;
+  margin: 0 auto 48px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+/* Region jump chips */
+.region-jumps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.region-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  background: var(--lu-accent-muted);
+  border: 1px solid var(--lu-accent-border);
+  border-radius: 100px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--lu-accent);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.region-chip:hover {
+  background: var(--lu-accent);
+  color: white;
+  border-color: var(--lu-accent);
+}
+
+/* Region section */
+.programs-region {
+  margin-bottom: 56px;
+  scroll-margin-top: 90px; /* offset for fixed nav */
+}
+
+.programs-region-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.programs-region-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.5vw, 26px);
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--dark);
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Program cards grid */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.program-card {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.program-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--lu-accent-border);
+  transform: translateY(-3px);
+}
+
+.program-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.program-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: white;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  padding: 4px;
+}
+
+.program-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+
+.program-location {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.program-card-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.prog-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--lu-accent-muted);
+  border: 1px solid var(--lu-accent-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lu-accent);
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.prog-btn:hover {
+  background: var(--lu-accent);
+  color: white;
+  border-color: var(--lu-accent);
+}
+
+/* Site link button is slightly wider */
+.prog-btn-site {
+  width: auto;
+  padding: 0 12px;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Empty region state */
+.programs-empty {
+  background: var(--off-white);
+  border: 1px dashed var(--border);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+}
+
+.programs-empty-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.programs-empty p {
+  font-size: 15px;
+  color: var(--mid);
+}
+
+.programs-empty a {
+  color: var(--lu-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.programs-footer-note {
+  text-align: center;
+  font-size: 16px;
+  color: var(--mid);
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.programs-footer-note a {
+  color: var(--lu-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/* ── CLASSES PAGE ─────────────────────────────────────────────────── */
+
+.classes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.class-card {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.class-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--lu-accent-border);
+}
+
+.class-card-has-img {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.class-card-img {
+  flex-shrink: 0;
+  width: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
+.class-card-content {
+  flex: 1;
+}
+
+.class-card-meta {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--lu-accent);
+  margin-bottom: 6px;
+}
+
+.class-card-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--dark);
+  margin: 0 0 12px;
+}
+
+.class-card-body {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.class-card-video {
+  margin: 16px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  max-width: 520px;
+}
+
+.class-card-video iframe {
+  display: block;
+  width: 100%;
+}
+
+.class-card-wide {
+  grid-column: 1 / -1;
+}
+
+
+/* ── PROGRAMS ABOUT PAGE ──────────────────────────────────────────── */
+
+.programs-feature-img {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 0;
+}
+
+.programs-feature-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.programs-feature-caption {
+  background: var(--off-white);
+  padding: 10px 16px;
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* Mailing list block */
+.mailing-list-block {
+  margin-top: 48px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 40px;
+}
+
+.mailing-list-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mailing-list-text h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--dark);
+  margin: 6px 0 0;
+}
+
+.mailing-list-form {
+  flex: 1;
+  min-width: 260px;
+}
+
+.mailing-list-form label {
+  display: block;
+  font-size: 13px;
+  color: var(--mid);
+  margin-bottom: 10px;
+}
+
+.mailing-list-row {
+  display: flex;
+  gap: 8px;
+}
+
+.mailing-list-form input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--dark);
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.mailing-list-form input:focus {
+  border-color: var(--lu-accent);
+}
+
+/* go-button already defined in old content-pages.css; override to match new style */
+.go-button {
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 20px !important;
+  border-radius: 100px !important;
+  background-color: var(--lu-accent) !important;
+  color: white !important;
+  font-family: var(--font-body) !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  border: none !important;
+  cursor: pointer;
+  transition: opacity 0.2s !important;
+}
+
+.go-button:hover {
+  background-color: var(--lu-accent-light) !important;
+}
+
+#mailing_list.error   input { border-color: #ef4444; background: #fef2f2; }
+#mailing_list.success input { border-color: #22c55e; background: #f0fdf4; }
+
+
+/* ── RESPONSIVE ADDITIONS ─────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .programs-map-block { width: 100%; height: auto; }
+  .programs-map-block img { width: 100%; height: auto; }
+
+  .class-card-has-img { flex-direction: column; }
+  .class-card-img     { width: 100%; max-width: 200px; }
+
+  .mailing-list-block { padding: 28px 20px; }
+  .mailing-list-inner { flex-direction: column; gap: 20px; }
+}

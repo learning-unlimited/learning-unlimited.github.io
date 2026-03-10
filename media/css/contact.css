@@ -1,0 +1,49 @@
+/* ── CONTACT PAGE ─────────────────────────────────────────────────── */
+
+.contact-methods-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contact-method-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 24px;
+  text-decoration: none;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.contact-method-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--lu-accent-border);
+  transform: translateY(-4px);
+}
+
+.contact-method-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.contact-method-label {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--lu-accent);
+}
+
+.contact-method-value {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+  word-break: break-all;
+}

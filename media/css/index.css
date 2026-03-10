@@ -1,3 +1,5 @@
+/* Contains landing page & footer styles by @SuperexMack and header styles by @naman005, I am not deleting redundant styles as it may break something */
+
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *, *::before, *::after {
@@ -8,15 +10,15 @@
 
 :root {
   --white: #ffffff;
-  --off-white: #f8f7f4;
+  --off-white: #f8f7f4; 
   --cream: #f2efe8;
   --black: #0d0d0d;
   --dark: #1a1a1a;
   --mid: #4a4a4a;
   --muted: #8a8a8a;
-  --accent: #e85d26;
-  --accent-light: #ff7a45;
-  --accent-muted: #fdebd8;
+  --accent: #7E94D4;
+  --accent-light: #a0b2e0;
+  --accent-muted: rgba(126, 148, 212, 0.12);
   --teal: #0f6b6b;
   --teal-light: #e0f2f1;
   --border: #e8e4db;
@@ -126,15 +128,19 @@ nav.scrolled {
     list-style:none;
 }
 
+.nav-links li a:hover{
+    color:var(--accent);
+}
+
 .nav-links a{
     text-decoration:none;
     color:black;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .hamburger{
     display:none;
-    font-size:28px;
+    font-size:28px; 
     cursor:pointer;
 }
 
@@ -158,22 +164,19 @@ nav.scrolled {
 .btn-ghost {
   background: transparent;
   color: var(--mid);
-  border: 1.5px solid var(--border);
+  border: 3px solid var(--border);
 }
 
 .btn-ghost-donor{
   background: transparent;
-  color: var(--mid);
-  border: 1.5px solid var(--border);
+  color: var(--black);
+  border: 3px solid var(--border);
 }
 
-.btn-ghost-donor:hover {
-  background: red;
-}
-
-.btn-ghost:hover {
-  background: #f4f2ef;
-  border: 1.5px solid black;
+.btn-ghost:hover, .btn-ghost-donor:hover {
+  background: var(--dark);
+  color: white;
+  border: 3px solid black;
 }
 
 .btn-primary {
@@ -184,7 +187,6 @@ nav.scrolled {
 
 .btn-primary:hover {
   background: var(--accent-light);
-  box-shadow: #e85d26;
   transform: translateY(-1px);
 }
 
@@ -597,17 +599,6 @@ section {
   position: relative;
 }
 
-/* .steps-grid::before {
-  content: '-';
-  position: absolute;
-  top: 28px;
-  left: calc(12.5% + 28px);
-  right: calc(12.5% + 28px);
-  height: 1px;
-  background: var(--border);
-  z-index: 0;
-} */
-
 .step-item {
   text-align: center;
   padding: 0 24px;
@@ -734,7 +725,7 @@ section {
 }
 
 .chapter-cta-box {
-  background: var(--dark);
+  background: var(--off-white);
   border-radius: var(--radius-xl);
   padding: 56px 48px;
   position: relative;
@@ -768,12 +759,12 @@ section {
   align-items: center;
   gap: 6px;
   padding: 5px 12px;
-  background: rgba(232,93,38,0.15);
+  background: var(--cream);
   border: 1px solid rgba(232,93,38,0.2);
   border-radius: 100px;
   font-size: 12px;
   font-weight: 800;
-  color: var(--accent-light);
+  color: var(--dark);
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 24px;
@@ -783,7 +774,7 @@ section {
   font-family: var(--font-display);
   font-size: 36px;
   font-weight: 800;
-  color: white;
+  color: var(--black);
   letter-spacing: -1.5px;
   line-height: 1.1;
   margin-bottom: 16px;
@@ -791,7 +782,7 @@ section {
 
 .chapter-cta-desc {
   font-size: 15px;
-  color: rgba(255,255,255,0.55);
+  color: var(--mid);
   line-height: 1.65;
   margin-bottom: 32px;
 }
@@ -831,6 +822,16 @@ footer::before {
   margin-bottom: 56px;
 }
 
+.footer-brand-header {
+  display: flex;
+  align-items: center;   
+  gap: 10px;             
+}
+
+.footer-brand-header img {
+  height: 64px; 
+}
+
 .footer-brand p {
   font-size: 14px;
   color: rgba(255,255,255,0.4);
@@ -843,10 +844,11 @@ footer::before {
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 700;
-  color: rgba(255,255,255,0.5);
+  color: white;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .footer-links {
@@ -979,4 +981,89 @@ footer::before {
         display:none;
     }
 
+}
+
+/* header styles by @naman005 */
+
+/* Active nav link */
+.nav-links a.nav-active {
+  color: var(--lu-accent);
+  font-weight: 700;
+}
+
+/* Scroll shadow (class toggled via JS) */
+nav.nav-scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Hamburger button ────────────────────────────────────────── */
+.hamburger {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm, 8px);
+  padding: 6px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--dark);
+  line-height: 1;
+  transition: background 0.2s, border-color 0.2s;
+  /* Reset any inherited button styles */
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.hamburger:hover {
+  background: var(--off-white);
+  border-color: var(--lu-accent-border);
+}
+
+/* ── Mobile layout ───────────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+  nav {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  /* Show hamburger, hide links by default */
+  .hamburger { display: flex; align-items: center; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 72px); 
+    background: var(--off-white); 
+    padding: 16px 0 20px;
+    gap: 4px;
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+  }
+
+  /* When JS adds .open the menu is visible */
+  .nav-links.open { display: flex; }
+
+  .nav-links li { width: 100%; }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 20px; 
+    border-radius: var(--radius-sm, 8px);
+    font-size: 15px;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.nav-active {
+    background: var(--lu-accent-muted, #eef0fa);
+  }
+
+  /* Donate button full-width on mobile */
+  .nav-links .btn-primary {
+    margin: 8px 20px 0;
+    width: calc(100% - 40px);
+    text-align: center;
+    display: block;
+  }
 }
