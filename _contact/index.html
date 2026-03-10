@@ -4,13 +4,164 @@ title: Contact LU
 permalink: /contact/
 ---
 
-<h1>Contact Information</h1>
+<script src="https://unpkg.com/lucide@latest"></script>
 
-<p>If you are interested in hearing more about Learning Unlimited, we would love to talk to you!  Please reach us by:</p>
+<style>
+  :root {
+    --apple-gray: #f5f5f7;
+    --apple-blue: #0066cc;
+    --text-main: #1d1d1f;
+    --text-secondary: #86868b;
+  }
 
-<ul>
-   <li>E-mail: <a href="mailto:info@learningu.org">info@learningu.org</a></li>
-   <li>Phone:  <a href="tel:+6173790178">(617) 379-0178</a></li>  
-   <li>Our <a href ="https://www.facebook.com/Learning-Unlimited-148451064087/">Facebook page</a></li>
-<li> <a href ="https://x.com/LUMakeASplash">Follow us</a> on X</li>
-</ul>
+  .apple-viewport {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .hero-side {
+    flex: 0.8;
+  }
+
+  .hero-side h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+
+  .hero-side p {
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+
+  .content-side {
+    flex: 1.2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .compact-card {
+    background: #fbfbfd;
+    border-radius: 14px;
+    padding: 16px 20px;
+    border: 1px solid rgba(0,0,0,0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+  }
+
+  .compact-card:hover {
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    transform: scale(1.01);
+  }
+
+  .icon-box {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-info { display: flex; flex-direction: column; }
+  .label { font-size: 10px; font-weight: 600; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.05em; }
+  .value { font-size: 15px; font-weight: 500; color: var(--text-main); }
+
+  .social-row { display: flex; gap: 8px; margin-top: 8px; width: 100%; }
+  .mini-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: filter 0.2s;
+  }
+
+  /* Entrance Animation */
+  .reveal {
+    animation: reveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 768px) {
+    .contact-wrapper { flex-direction: column; gap: 1.5rem; }
+    .hero-side { text-align: center; width: 100%; }
+  }
+</style>
+
+<div class="apple-viewport">
+  
+  <div class="contact-wrapper">
+    
+    <div class="hero-side reveal" style="animation-delay: 0.1s;">
+      <h1>Get in touch.</h1>
+      <p>We’re here to help you make a splash in your learning journey.</p>
+    </div>
+
+    <div class="content-side">
+      
+      <a href="mailto:info@learningunlimited.org" class="compact-card reveal" style="animation-delay: 0.2s;">
+        <div class="icon-box" style="background: #eef6ff; color: #0071e3;"><i data-lucide="mail" size="18"></i></div>
+        <div class="card-info">
+          <span class="label">Email</span>
+          <span class="value">info@learningunlimited.org</span>
+        </div>
+      </a>
+
+      <div class="compact-card reveal" style="animation-delay: 0.3s;">
+        <div class="icon-box" style="background: #f2fcf5; color: #34c759;"><i data-lucide="phone" size="18"></i></div>
+        <div class="card-info">
+          <span class="label">Call</span>
+          <a href="tel:6173790178" class="value" style="text-decoration: none;">(617) 379-0178</a>
+        </div>
+      </div>
+
+      <div class="compact-card reveal" style="animation-delay: 0.4s; flex-direction: column; align-items: flex-start;">
+        <span class="label">Follow Us</span>
+        <div class="social-row">
+          <a href="https://facebook.com/Learning-Unlimited-148451064087/" target="_blank" class="mini-btn" style="background: #0071e3; color: white;">
+            <i data-lucide="facebook" size="14" style="margin-right: 6px;"></i> Facebook
+          </a>
+          <a href="https://x.com/LUMakeASplash" target="_blank" class="mini-btn" style="background: #000; color: white;">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 6px;">
+              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932 6.064-6.932zm-1.294 19.497h2.039L6.482 2.918H4.294l13.313 17.732z"/>
+            </svg>
+            X
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  lucide.createIcons();
+</script>
