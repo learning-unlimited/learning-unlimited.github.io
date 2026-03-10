@@ -1,6 +1,23 @@
-{% assign section = site.collections | where: "label", page.collection | first %}
-{% include header.html %}
-<div id="realbody">
-{{ content }}
-</div>
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% if page.title %}{{ page.title }} — Learning Unlimited{% else %}Learning Unlimited{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/media/css/index.css">
+  <link rel="stylesheet" href="/media/css/internal.css">
+  <link rel="icon" href="/media/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/media/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/media/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/images/apple-touch-icon.png">
+  <link rel="manifest" href="/media/images/site.webmanifest">
+</head>
+
+<body>
+  {% include nav_new.html %}
+  <main class="internal-main">
+    {{ content }}
+  </main>
+  {% include footer_new.html %}
+</body>
+</html>
