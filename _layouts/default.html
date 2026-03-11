@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}{{ page.title }} – Learning Unlimited{% else %}Learning Unlimited{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} &ndash; Learning Unlimited{% else %}Learning Unlimited{% endif %}</title>
   <meta name="description" content="Learning Unlimited empowers college students to create enriching educational programs for middle and high school students across the country.">
 
-  <!-- ── Fonts ─────────────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- ── Core styles (always loaded) ──────────────────────────── -->
   <link rel="stylesheet" href="/media/css/index.css">
   <link rel="stylesheet" href="/media/css/internal.css">
 
@@ -38,12 +36,8 @@
     <link rel="stylesheet" href="/media/css/about.css">
   {% endif %}
 
-  <!-- ── Favicons ──────────────────────────────────────────────── -->
-  <link rel="icon"             href="/media/images/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="/media/images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/media/images/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180"    href="/media/images/apple-touch-icon.png">
-  <link rel="manifest"         href="/media/images/site.webmanifest">
+  <link rel="icon" href="/media/images/favicon.ico">
+  <link rel="manifest" href="/media/images/site.webmanifest">
 </head>
 
 <body>
@@ -55,28 +49,8 @@
 
   {% include footer.html %}
 
-  <!-- ── Nav scroll-shadow + hamburger toggle ──────────────────── -->
-  <script>
-    (function () {
-      var nav  = document.querySelector('nav');
-      var ham  = document.getElementById('hamburger');
-      var menu = document.getElementById('nav-links');
+  <script src="/assets/js/mailing-list.js"></script>
+  <script src="/assets/js/main.js"></script>
 
-      window.addEventListener('scroll', function () {
-        nav.classList.toggle('nav-scrolled', window.scrollY > 10);
-      });
-
-      if (ham && menu) {
-        ham.addEventListener('click', function () {
-          var open = menu.classList.toggle('open');
-          ham.setAttribute('aria-expanded', open);
-          ham.innerHTML = open ? '✕' : '☰';
-        });
-      }
-
-      var el = document.getElementById('getfullyear');
-      if (el) el.textContent = new Date().getFullYear();
-    })();
-  </script> 
 </body>
 </html>

@@ -1,30 +1,5 @@
 /* ── CHAPTER INDEX — nav cards ───────────────────────────────────── */
 
-.chapter-nav-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-  margin-bottom: 0;
-}
-
-.chapter-nav-card {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: var(--off-white);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 28px;
-  text-decoration: none;
-  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
-  position: relative;
-}
-
-.chapter-nav-card:hover {
-  box-shadow: var(--shadow-md);
-  border-color: var(--border);
-  transform: translateY(-4px);
-}
 
 .chapter-nav-icon {
   font-size: 28px;
@@ -40,20 +15,6 @@
   color: var(--accent);
 }
 
-.chapter-nav-title {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 800;
-  color: var(--dark);
-  letter-spacing: -0.5px;
-}
-
-.chapter-nav-desc {
-  font-size: 13px;
-  color: var(--mid);
-  line-height: 1.6;
-  flex: 1;
-}
 
 .chapter-nav-arrow {
   font-size: 18px;
@@ -265,24 +226,6 @@
   border-color: var(--dark);
 }
 
-
-/* ── GOOGLE FORM embed ───────────────────────────────────────────── */
-
-.embed-frame-block {
-  background: var(--off-white);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 8px;
-}
-
-.embed-frame-block iframe {
-  display: block;
-  width: 100%;
-  border-radius: 14px;
-}
-
-
 /* ── RESPONSIVE ──────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
@@ -290,5 +233,4 @@
   .help-cards-grid    { grid-template-columns: 1fr; }
   .chapter-step-item  { flex-direction: column; }
   .chapter-step-number { width: 40px; height: 40px; font-size: 14px; }
-  .embed-frame-block iframe { height: 600px; }
 }

@@ -864,16 +864,17 @@ footer::before {
   .hamburger { display: flex; align-items: center; }
 
   .nav-links {
-    display: none;
+    display: none; 
     position: absolute;
     top: 72px; left: 0; right: 0;
     flex-direction: column;
     width: 100%;
+    background: var(--off-white);
     height: calc(100vh - 72px); 
-    background: var(--off-white); 
     padding: 16px 4px 20px;
     gap: 4px;
     border-top: 1px solid var(--border);
+    z-index: 1000;
   }
 
   /* When JS adds .open the menu is visible */
@@ -886,6 +887,7 @@ footer::before {
     padding: 10px 20px; 
     border-radius: var(--radius-sm, 8px);
     font-size: 15px;
+    font-weight: 600;
   }
 
   .nav-links a:hover,
