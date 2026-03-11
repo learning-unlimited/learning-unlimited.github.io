@@ -1,5 +1,3 @@
-/* Contains landing page & footer styles by @SuperexMack and header styles by @naman005, I am not deleting redundant styles as it may break something */
-
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *, *::before, *::after {
@@ -18,9 +16,7 @@
   --muted: #8a8a8a;
   --accent: #7E94D4;
   --accent-light: #a0b2e0;
-  --accent-muted: rgba(126, 148, 212, 0.12);
-  --teal: #0f6b6b;
-  --teal-light: #e0f2f1;
+  --accent-muted: #7e94d41f;
   --border: #e8e4db;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
   --shadow-md: 0 8px 32px rgba(0,0,0,0.08);
@@ -54,6 +50,29 @@ body::before {
   pointer-events: none;
   z-index: 0;
   opacity: 0.4;
+}
+
+/* navigation styles */
+
+.nav-links a.nav-active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  border-radius: var(--radius-sm, 8px);
+  padding: 6px 10px;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--dark);
+  line-height: 1;
+  transition: background 0.2s, border-color 0.2s;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 nav {
@@ -102,15 +121,9 @@ nav.scrolled {
 }
 
 .nav-logo-text{
-  color: #0d0d0d;
+  color: var(--black);
   font-weight: 600;
   font-size: x-large;
-}
-
-.nav-logo-img {
-  height: 36px;
-  width: auto;
-  object-fit: contain;
 }
 
 #navbar{
@@ -138,13 +151,6 @@ nav.scrolled {
     font-weight: 600;
 }
 
-.hamburger{
-    display:none;
-    font-size:28px; 
-    cursor:pointer;
-}
-
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -164,25 +170,25 @@ nav.scrolled {
 .btn-ghost {
   background: transparent;
   color: var(--mid);
-  border: 3px solid var(--border);
+  border: 1px solid var(--border);
 }
 
 .btn-ghost-donor{
   background: transparent;
   color: var(--black);
-  border: 3px solid var(--border);
+  border: 1px solid var(--border);
 }
 
 .btn-ghost:hover, .btn-ghost-donor:hover {
   background: var(--dark);
   color: white;
-  border: 3px solid black;
+  border: 1px solid black;
 }
 
 .btn-primary {
   background: var(--accent);
   color: white;
-  box-shadow: #7E94D4;
+  box-shadow: 0 4px 12px var(--accent-muted);
 }
 
 .btn-primary:hover {
@@ -202,6 +208,8 @@ nav.scrolled {
   border-radius: 100px;
 }
 
+/* styles used in _includes/herosection */
+
 
 .hero {
   min-height: 80vh;
@@ -219,48 +227,6 @@ nav.scrolled {
   inset: 0;
   pointer-events: none;
   overflow: hidden;
-}
-
-.shape {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.shape-1 {
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(232,93,38,0.07) 0%, transparent 70%);
-  top: -200px;
-  right: -100px;
-  animation: float1 8s ease-in-out infinite;
-}
-
-.shape-2 {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(15,107,107,0.06) 0%, transparent 70%);
-  bottom: -100px;
-  left: -80px;
-  animation: float2 10s ease-in-out infinite;
-}
-
-.shape-3 {
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(232,93,38,0.05) 0%, transparent 70%);
-  top: 40%;
-  left: 20%;
-  animation: float1 12s ease-in-out infinite reverse;
-}
-
-@keyframes float1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(20px, -30px) scale(1.05); }
-}
-
-@keyframes float2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-15px, 20px) scale(1.03); }
 }
 
 .hero-content {
@@ -387,47 +353,7 @@ nav.scrolled {
 }
 
 
-.marquee-section {
-  padding: 20px 0;
-  background: var(--dark);
-  overflow: hidden;
-  position: relative;
-}
-
-.marquee-track {
-  display: flex;
-  gap: 0;
-  animation: marquee 30s linear infinite;
-  white-space: nowrap;
-}
-
-.marquee-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 20px;
-  padding: 12px 32px;
-  font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.5);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  flex-shrink: 0;
-}
-
-.marquee-dot {
-  width: 5px;
-  height: 5px;
-  background: var(--accent);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
+/* page styles - used in _includes/Lustartchapter, about */
 
 section {
   position: relative;
@@ -631,36 +557,7 @@ section {
 }
 
 
-
-.author-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
-  flex-shrink: 0;
-}
-
-.avatar-orange { background: var(--accent); }
-.avatar-teal { background: var(--teal); }
-.avatar-dark { background: var(--dark); }
-
-.author-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--dark);
-}
-
-.author-role {
-  font-size: 13px;
-  color: var(--muted);
-}
-
+/* chapter styles - used in _includes/Luworking.html */
 
 .chapter-section {
   padding: 100px 0;
@@ -793,6 +690,8 @@ section {
   gap: 12px;
 }
 
+/* footer styles */
+
 footer {
   background: var(--dark);
   padding: 64px 0 32px;
@@ -920,6 +819,8 @@ footer::before {
   transform: translateY(0);
 }
 
+
+
 @media (max-width: 1024px) {
   .programs-grid { grid-template-columns: 1fr 1fr; }
   .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
@@ -953,73 +854,6 @@ footer::before {
   .chapter-cta-title { font-size: 28px; }
 }
 
-
-@media (max-width: 1055px){
-
-    .hamburger{
-        display:block;
-    }
-
-    .nav-links{
-        position:absolute;
-        top:70px;
-        left:0;
-        width:100%;
-        background:white;
-        flex-direction:column;
-        align-items:center;
-        gap:20px;
-        padding:20px 0;
-        display:none;
-    }
-
-    .nav-links.active{
-        display:flex;
-    }
-
-    .nav-cta{
-        display:none;
-    }
-
-}
-
-/* header styles by @naman005 */
-
-/* Active nav link */
-.nav-links a.nav-active {
-  color: var(--lu-accent);
-  font-weight: 700;
-}
-
-/* Scroll shadow (class toggled via JS) */
-nav.nav-scrolled {
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* ── Hamburger button ────────────────────────────────────────── */
-.hamburger {
-  display: none;
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm, 8px);
-  padding: 6px 10px;
-  font-size: 18px;
-  cursor: pointer;
-  color: var(--dark);
-  line-height: 1;
-  transition: background 0.2s, border-color 0.2s;
-  /* Reset any inherited button styles */
-  font-family: inherit;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.hamburger:hover {
-  background: var(--off-white);
-  border-color: var(--lu-accent-border);
-}
-
-/* ── Mobile layout ───────────────────────────────────────────── */
 @media (max-width: 1024px) {
 
   nav {
@@ -1027,19 +861,19 @@ nav.nav-scrolled {
     gap: 0;
   }
 
-  /* Show hamburger, hide links by default */
   .hamburger { display: flex; align-items: center; }
 
   .nav-links {
     display: none;
+    position: absolute;
+    top: 72px; left: 0; right: 0;
     flex-direction: column;
     width: 100%;
     height: calc(100vh - 72px); 
     background: var(--off-white); 
-    padding: 16px 0 20px;
+    padding: 16px 4px 20px;
     gap: 4px;
     border-top: 1px solid var(--border);
-    margin-top: 8px;
   }
 
   /* When JS adds .open the menu is visible */
@@ -1056,10 +890,9 @@ nav.nav-scrolled {
 
   .nav-links a:hover,
   .nav-links a.nav-active {
-    background: var(--lu-accent-muted, #eef0fa);
+    background: var(--accent-muted, #eef0fa);
   }
 
-  /* Donate button full-width on mobile */
   .nav-links .btn-primary {
     margin: 8px 20px 0;
     width: calc(100% - 40px);

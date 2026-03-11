@@ -1,46 +1,4 @@
-.intro-text {
-  font-size: 17px;
-  color: var(--mid);
-  line-height: 1.8;
-  margin-bottom: 56px;
-}
-
-.prose-link {
-  font-size: 16px;
-  color: var(--mid);
-  line-height: 1.8;
-}
-
-.prose-link a {
-  color: var(--lu-accent);
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px solid var(--lu-accent-border);
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.prose-link a:hover { color: var(--dark); border-color: var(--dark); }
-
-/* ── 6. PHOTO STRIP ──────────────────────────────────────────────── */
-
-.photo-strip {
-  display: flex;
-  gap: 14px;
-  max-width: 880px;
-  margin: 48px auto 0;
-  padding: 0 40px;
-}
-
-.photo-strip img {
-  flex: 1; min-width: 0;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 16px;
-  border: 1px solid var(--border);
-  display: block;
-}
-
-/* ── 7. VALUE / FEATURE CARDS (About index) ──────────────────────── */
+/* ── VALUE / FEATURE CARDS (About index) ──────────────────────── */
 
 .values-grid {
   display: grid;
@@ -52,21 +10,21 @@
 .value-card {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 28px;
   transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .value-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-4px);
 }
 
 .value-icon {
   width: 44px; height: 44px;
   border-radius: 12px;
-  background: var(--lu-accent-muted);
+  background: var(--accent-muted);
   display: flex; align-items: center; justify-content: center;
   font-size: 22px;
   margin-bottom: 16px;
@@ -82,7 +40,7 @@
 
 .value-card p { font-size: 14px; color: var(--mid); line-height: 1.7; margin: 0; }
 
-/* ── 8. RESULTS PAGE ─────────────────────────────────────────────── */
+/* ── RESULTS PAGE ─────────────────────────────────────────────── */
 
 .stat-strip {
   display: grid;
@@ -90,7 +48,7 @@
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: 64px;
 }
@@ -125,14 +83,14 @@
 .stat-card {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 24px;
   transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .stat-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-3px);
 }
 
@@ -140,7 +98,7 @@
   font-family: var(--font-display);
   font-size: 36px; font-weight: 800;
   letter-spacing: -1.5px;
-  color: var(--lu-accent);
+  color: var(--accent);
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -164,7 +122,7 @@
 
 .results-section .section-sub strong { color: var(--dark); font-weight: 700; }
 
-/* ── 9. SUPPORTERS PAGE ──────────────────────────────────────────── */
+/* ── SUPPORTERS PAGE ──────────────────────────────────────────── */
 
 .supporters-grid {
   display: grid;
@@ -184,7 +142,7 @@
 
 .supporter-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-4px);
 }
 
@@ -200,7 +158,7 @@
   color: var(--dark); letter-spacing: -0.5px;
 }
 
-/* ── 10. WHAT WE DO PAGE ─────────────────────────────────────────── */
+/* ── WHAT WE DO PAGE ─────────────────────────────────────────── */
 
 .feature-block {
   display: grid;
@@ -229,7 +187,7 @@
   background: var(--off-white); font-style: italic;
 }
 
-.feature-img figcaption a { color: var(--lu-accent); text-decoration: none; }
+.feature-img figcaption a { color: var(--accent); text-decoration: none; }
 
 .feature-text h2 {
   font-family: var(--font-display);
@@ -240,7 +198,7 @@
 
 .feature-text p { font-size: 15px; color: var(--mid); line-height: 1.8; margin: 0 0 12px; }
 .feature-text p strong { color: var(--dark); font-weight: 700; }
-.feature-text a { color: var(--lu-accent); font-weight: 600; text-decoration: none; }
+.feature-text a { color: var(--accent); font-weight: 600; text-decoration: none; }
 .feature-text a:hover { text-decoration: underline; }
 
 .diff-section { margin-bottom: 72px; }
@@ -273,7 +231,7 @@
 
 .diff-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-4px);
 }
 
@@ -308,7 +266,7 @@
   color: var(--dark); margin: 0 0 32px;
 }
 .outcomes-section a {
-  color: var(--lu-accent);
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
 }
@@ -318,7 +276,7 @@
 }
 
 
-/* ── 11. WHO WE ARE PAGE ─────────────────────────────────────────── */
+/* ── WHO WE ARE PAGE ─────────────────────────────────────────── */
 
 .wwa-wrap {
   max-width: 960px;
@@ -365,7 +323,7 @@
 
 .bio-card:hover {
   box-shadow: var(--shadow-sm);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-3px);
 }
 
@@ -381,12 +339,12 @@
   flex-shrink: 0;
   width: 110px; height: 110px;
   border-radius: 14px;
-  background: var(--lu-accent-muted);
-  border: 1px solid var(--lu-accent-border);
+  background: var(--accent-muted);
+  border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-display);
   font-size: 32px; font-weight: 800;
-  color: var(--lu-accent);
+  color: var(--accent);
 }
 
 .bio-body { flex: 1; min-width: 0; }
@@ -401,14 +359,14 @@
 .bio-role {
   font-family: var(--font-display);
   font-size: 12px; font-weight: 700;
-  color: var(--lu-accent);
+  color: var(--accent);
   text-transform: uppercase; letter-spacing: 1px;
   margin-bottom: 12px;
 }
 
 .bio-text { font-size: 14px; color: var(--mid); line-height: 1.75; }
 
-/* ── 12. PRIVACY PAGE ────────────────────────────────────────────── */
+/* ── PRIVACY PAGE ────────────────────────────────────────────── */
 
 .policy-wrap {
   max-width: 780px;
@@ -420,7 +378,7 @@
 .policy-toc {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 28px 32px;
   margin-bottom: 48px;
 }
@@ -435,7 +393,7 @@
 
 .policy-toc ol { margin: 0 0 0 20px; padding: 0; }
 .policy-toc li { margin-bottom: 8px; }
-.policy-toc a  { font-size: 14px; color: var(--lu-accent); text-decoration: none; font-weight: 600; transition: color 0.2s; }
+.policy-toc a  { font-size: 14px; color: var(--accent); text-decoration: none; font-weight: 600; transition: color 0.2s; }
 .policy-toc a:hover { color: var(--dark); }
 
 .policy-section         { margin-bottom: 48px; }
@@ -450,31 +408,26 @@
 }
 
 .policy-section p  { font-size: 15px; color: var(--mid); line-height: 1.8; margin: 0 0 14px; }
-.policy-section a  { color: var(--lu-accent); text-decoration: none; font-weight: 600; }
+.policy-section a  { color: var(--accent); text-decoration: none; font-weight: 600; }
 .policy-section a:hover { text-decoration: underline; }
 
 .contact-chip {
   display: inline-flex; align-items: center; gap: 8px;
-  background: var(--lu-accent-muted);
-  border: 1px solid var(--lu-accent-border);
+  background: var(--accent-muted);
+  border: 1px solid var(--border);
   border-radius: 100px;
   padding: 6px 16px;
-  font-size: 14px; color: var(--lu-accent); font-weight: 600;
+  font-size: 14px; color: var(--accent); font-weight: 600;
   margin-bottom: 40px;
 }
 
-.contact-chip a { color: var(--lu-accent); text-decoration: none; }
-
-/* ── 13. RESPONSIVE ──────────────────────────────────────────────── */
+.contact-chip a { color: var(--accent); text-decoration: none; }
 
 @media (max-width: 768px) {
   .page-hero          { padding: 56px 20px 44px; }
   .content-wrap       { padding: 40px 20px; }
   .wwa-wrap           { padding: 40px 20px; }
   .policy-wrap        { padding: 40px 20px; }
-
-  .photo-strip        { padding: 0 20px; flex-wrap: wrap; }
-  .photo-strip img    { height: 140px; }
 
   .stat-strip         { grid-template-columns: 1fr; }
   .stat-cards         { grid-template-columns: 1fr; }

@@ -81,9 +81,9 @@ All colors, spacing, and typography are driven by CSS custom properties in `inde
 ### Key Variables
 
 ```css
---lu-accent:        #7E94D4;   /* Primary blue — change here to retheme */
---lu-accent-muted:  #eef0fa;   /* Light tint for backgrounds */
---lu-accent-border: #c5cef0;   /* Subtle borders */
+--accent:        #7E94D4;   /* Primary blue — change here to retheme */
+--accent-muted:  #eef0fa;   /* Light tint for backgrounds */
+--border: #c5cef0;   /* Subtle borders */
 --white:            #ffffff;
 --off-white:        #fafaf8;
 --dark:             #1a1a1a;
@@ -94,7 +94,7 @@ All colors, spacing, and typography are driven by CSS custom properties in `inde
 --font-body:        'Nunito', sans-serif;
 ```
 
-> To change the accent color site-wide, update `--lu-accent` in `index.css`. All components reference this variable.
+> To change the accent color site-wide, update `--accent` in `index.css`. All components reference this variable.
 
 ---
 

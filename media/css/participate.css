@@ -21,7 +21,7 @@
 
 .involve-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-4px);
 }
 
@@ -46,14 +46,13 @@
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 700;
-  color: var(--lu-accent);
+  color: var(--accent);
   margin-top: 4px;
   transition: text-decoration 0.2s;
 }
 
 .involve-card:hover .involve-card-link { text-decoration: underline; }
 
-/* Intro paragraph */
 .participate-intro {
   font-size: 16px;
   color: var(--mid);
@@ -62,14 +61,13 @@
 }
 
 .participate-intro a {
-  color: var(--lu-accent);
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
 }
 
 .participate-intro a:hover { text-decoration: underline; }
 
-/* Quick-action row (contact + donate buttons) */
 .quick-actions {
   display: flex;
   flex-wrap: wrap;
@@ -93,7 +91,7 @@
 
 .quick-action:hover {
   box-shadow: var(--shadow-sm);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-2px);
 }
 
@@ -122,7 +120,7 @@
 }
 
 .volunteer-intro p         { margin-bottom: 14px; }
-.volunteer-intro a         { color: var(--lu-accent); font-weight: 600; text-decoration: none; }
+.volunteer-intro a         { color: var(--accent); font-weight: 600; text-decoration: none; }
 .volunteer-intro a:hover   { text-decoration: underline; }
 
 .projects-datestamp {
@@ -142,14 +140,14 @@
 .project-card {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 24px;
   transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .project-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-3px);
 }
 
@@ -163,10 +161,8 @@
 }
 
 .project-card p           { font-size: 13px; color: var(--mid); line-height: 1.7; margin: 0; }
-.project-card a           { color: var(--lu-accent); font-weight: 600; text-decoration: none; }
+.project-card a           { color: var(--accent); font-weight: 600; text-decoration: none; }
 .project-card a:hover     { text-decoration: underline; }
-
-/* ── RESPONSIVE ──────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .involve-grid  { grid-template-columns: 1fr; }

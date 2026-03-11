@@ -22,7 +22,7 @@
 
 .chapter-nav-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-4px);
 }
 
@@ -37,7 +37,7 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--lu-accent);
+  color: var(--accent);
 }
 
 .chapter-nav-title {
@@ -57,7 +57,7 @@
 
 .chapter-nav-arrow {
   font-size: 18px;
-  color: var(--lu-accent);
+  color: var(--accent);
   font-weight: 700;
   margin-top: 8px;
   transition: transform 0.2s;
@@ -83,14 +83,14 @@
   align-items: flex-start;
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 28px;
   transition: box-shadow 0.3s, border-color 0.3s;
 }
 
 .chapter-step-item:hover {
   box-shadow: var(--shadow-sm);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
 }
 
 .chapter-step-number {
@@ -98,15 +98,15 @@
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: var(--lu-accent-muted);
-  border: 1px solid var(--lu-accent-border);
+  background: var(--accent-muted);
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
   font-size: 16px;
   font-weight: 800;
-  color: var(--lu-accent);
+  color: var(--accent);
   letter-spacing: -0.5px;
 }
 
@@ -143,14 +143,14 @@
 .help-card {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 28px;
   transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
 }
 
 .help-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-4px);
 }
 
@@ -188,13 +188,13 @@
 .faq-item {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .faq-item:hover {
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   box-shadow: var(--shadow-sm);
 }
 
@@ -217,12 +217,12 @@
   width: 24px;
   height: 24px;
   border-radius: 6px;
-  background: var(--lu-accent-muted);
-  border: 1px solid var(--lu-accent-border);
+  background: var(--accent-muted);
+  border: 1px solid var(--border);
   font-family: var(--font-display);
   font-size: 11px;
   font-weight: 800;
-  color: var(--lu-accent);
+  color: var(--accent);
   margin-right: 12px;
   vertical-align: middle;
   position: relative;
@@ -253,10 +253,10 @@
 }
 
 .chapter-page-footer a {
-  color: var(--lu-accent);
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid var(--lu-accent-border);
+  border-bottom: 1px solid var(--border);
   transition: color 0.2s, border-color 0.2s;
 }
 

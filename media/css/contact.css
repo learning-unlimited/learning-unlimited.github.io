@@ -22,7 +22,7 @@
 
 .contact-method-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-4px);
 }
 
@@ -37,7 +37,7 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--lu-accent);
+  color: var(--accent);
 }
 
 .contact-method-value {

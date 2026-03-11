@@ -1,38 +1,8 @@
-/*
- * internal.css
- * ─────────────────────────────────────────────────────────────────
- * Styles for ALL internal pages (About, Privacy, Results, What We
- * Do, Who We Are, Supporters, etc.)
- *
- * Depends on: /media/css/index.css  (must load first — provides
- * CSS variables, fonts, nav, footer, and .btn classes)
- *
- * ── ACCENT COLOUR ────────────────────────────────────────────────
- * Every "red/accent" element from the old site is replaced with
- * --lu-accent, which defaults to the blue from the LU logo.
- * To retheme the entire site, change ONE line:
- *
- *   --lu-accent: #7E94D4;   ← logo blue  (default)
- *   --lu-accent: #e85d26;   ← landing-page orange
- * ─────────────────────────────────────────────────────────────────
- */
-
-/* ── 1. THEME VARIABLE ───────────────────────────────────────────── */
-
-:root {
-  --lu-accent:        #7E94D4;
-  --lu-accent-light:  #a0b2e0;
-  --lu-accent-muted:  rgba(126, 148, 212, 0.12);
-  --lu-accent-border: rgba(126, 148, 212, 0.30);
-}
-
-/* ── 2. LAYOUT SHELL ─────────────────────────────────────────────── */
+/* Styles for ALL internal pages */
 
 .internal-main {
   padding-top: 72px; /* clears the fixed nav */
 }
-
-/* ── 3. PAGE HERO BANNER ─────────────────────────────────────────── */
 
 .page-hero {
   padding: 72px 40px 60px;
@@ -47,7 +17,7 @@
   position: absolute;
   top: -140px; right: -100px;
   width: 500px; height: 500px;
-  background: radial-gradient(circle, var(--lu-accent-muted) 0%, transparent 70%);
+  background: radial-gradient(circle, var(--accent-muted) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -63,13 +33,13 @@
   align-items: center;
   gap: 8px;
   padding: 5px 14px 5px 8px;
-  background: var(--lu-accent-muted);
-  border: 1px solid var(--lu-accent-border);
+  background: var(--accent-muted);
+  border: 1px solid var(--border);
   border-radius: 100px;
   font-family: var(--font-display);
   font-size: 12px;
   font-weight: 700;
-  color: var(--lu-accent);
+  color: var(--accent);
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -77,7 +47,7 @@
 
 .page-label-dot {
   width: 6px; height: 6px;
-  background: var(--lu-accent);
+  background: var(--accent);
   border-radius: 50%;
   flex-shrink: 0;
 }
@@ -101,10 +71,8 @@
   margin: 0;
 }
 
-.page-hero a         { color: var(--lu-accent); font-weight: 600; text-decoration: none; }
+.page-hero a         { color: var(--accent); font-weight: 600; text-decoration: none; }
 .page-hero a:hover   { text-decoration: underline; }
-
-/* ── 4. CONTENT WRAPPER ──────────────────────────────────────────── */
 
 .content-wrap {
   max-width: 880px;
@@ -113,15 +81,13 @@
   font-family: var(--font-body);
 }
 
-/* ── 5. SHARED TYPOGRAPHY ────────────────────────────────────────── */
-
 .eyebrow {
   font-family: var(--font-display);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--lu-accent);
+  color: var(--accent);
   margin-bottom: 10px;
 }
 
@@ -148,16 +114,14 @@
 }
 
 .prose-link a {
-  color: var(--lu-accent);
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid var(--lu-accent-border);
+  border-bottom: 1px solid var(--border);
   transition: color 0.2s, border-color 0.2s;
 }
 
 .prose-link a:hover { color: var(--dark); border-color: var(--dark); }
-
-/* ── 6. PHOTO STRIP ──────────────────────────────────────────────── */
 
 .photo-strip {
   display: flex;
@@ -171,8 +135,97 @@
   flex: 1; min-width: 0;
   height: 190px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--border);
   display: block;
 }
 
+/* mailing list styles shared across participate & current progrmas */
+
+.mailing-list-block {
+  margin-top: 48px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 36px 40px;
+}
+
+.mailing-list-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mailing-list-text h3 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--dark);
+  margin: 6px 0 0;
+}
+
+.mailing-list-form {
+  flex: 1;
+  min-width: 260px;
+}
+
+.mailing-list-form label {
+  display: block;
+  font-size: 13px;
+  color: var(--mid);
+  margin-bottom: 10px;
+}
+
+.mailing-list-row {
+  display: flex;
+  gap: 8px;
+}
+
+.mailing-list-form input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--dark);
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.mailing-list-form input:focus {
+  border-color: var(--accent);
+}
+
+.go-button {
+  width: auto !important;
+  height: auto !important;
+  padding: 10px 20px !important;
+  border-radius: 100px !important;
+  background-color: var(--accent) !important;
+  color: white !important;
+  font-family: var(--font-body) !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  border: none !important;
+  cursor: pointer;
+  transition: opacity 0.2s !important;
+}
+
+.go-button:hover {
+  background-color: var(--accent-light) !important;
+}
+
+#mailing_list.error   input { border-color: #ef4444; background: #fef2f2; }
+#mailing_list.success input { border-color: #22c55e; background: #f0fdf4; }
+
+@media (max-width: 768px) {
+  .photo-strip        { padding: 0 20px; flex-wrap: wrap; }
+  .photo-strip img    { height: 140px; }
+  
+  .mailing-list-block { padding: 28px 20px; }
+  .mailing-list-inner { flex-direction: column; gap: 20px; }
+}

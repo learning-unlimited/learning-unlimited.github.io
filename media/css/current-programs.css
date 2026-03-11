@@ -4,18 +4,15 @@
   max-width: 960px;
 }
 
-/* Map container — preserves original absolute-positioned image+table */
 .programs-map-block {
   position: relative;
   width: 700px;
   height: 438px;
   margin: 0 auto 48px;
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid var(--border);
 }
 
-/* Region jump chips */
 .region-jumps {
   display: flex;
   flex-wrap: wrap;
@@ -28,27 +25,26 @@
   display: inline-flex;
   align-items: center;
   padding: 6px 16px;
-  background: var(--lu-accent-muted);
-  border: 1px solid var(--lu-accent-border);
+  background: var(--accent-muted);
+  border: 1px solid var(--border);
   border-radius: 100px;
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 700;
-  color: var(--lu-accent);
+  color: var(--accent);
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
 }
 
 .region-chip:hover {
-  background: var(--lu-accent);
+  background: var(--accent);
   color: white;
-  border-color: var(--lu-accent);
+  border-color: var(--accent);
 }
 
-/* Region section */
 .programs-region {
   margin-bottom: 56px;
-  scroll-margin-top: 90px; /* offset for fixed nav */
+  scroll-margin-top: 90px; 
 }
 
 .programs-region-header {
@@ -68,7 +64,6 @@
   white-space: nowrap;
 }
 
-/* Program cards grid */
 .programs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -78,7 +73,7 @@
 .program-card {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -88,7 +83,7 @@
 
 .program-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
   transform: translateY(-3px);
 }
 
@@ -134,25 +129,24 @@
 .prog-btn {
   width: 34px;
   height: 34px;
-  border-radius: 8px;
-  background: var(--lu-accent-muted);
-  border: 1px solid var(--lu-accent-border);
+  border-radius: var(--radius-sm);
+  background: var(--accent-muted);
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--lu-accent);
+  color: var(--accent);
   text-decoration: none;
   font-size: 14px;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .prog-btn:hover {
-  background: var(--lu-accent);
+  background: var(--accent);
   color: white;
-  border-color: var(--lu-accent);
+  border-color: var(--accent);
 }
 
-/* Site link button is slightly wider */
 .prog-btn-site {
   width: auto;
   padding: 0 12px;
@@ -162,11 +156,10 @@
   font-weight: 700;
 }
 
-/* Empty region state */
 .programs-empty {
   background: var(--off-white);
   border: 1px dashed var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 40px;
   text-align: center;
 }
@@ -182,7 +175,7 @@
 }
 
 .programs-empty a {
-  color: var(--lu-accent);
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
 }
@@ -197,7 +190,7 @@
 }
 
 .programs-footer-note a {
-  color: var(--lu-accent);
+  color: var(--accent);
   font-weight: 700;
   text-decoration: none;
 }
@@ -214,14 +207,14 @@
 .class-card {
   background: var(--off-white);
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 28px;
   transition: box-shadow 0.3s, border-color 0.3s;
 }
 
 .class-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--lu-accent-border);
+  border-color: var(--border);
 }
 
 .class-card-has-img {
@@ -248,7 +241,7 @@
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: var(--lu-accent);
+  color: var(--accent);
   margin-bottom: 6px;
 }
 
@@ -289,7 +282,7 @@
 /* ── PROGRAMS ABOUT PAGE ──────────────────────────────────────────── */
 
 .programs-feature-img {
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--border);
   margin-bottom: 0;
@@ -309,90 +302,7 @@
   font-style: italic;
 }
 
-/* Mailing list block */
-.mailing-list-block {
-  margin-top: 48px;
-  background: var(--off-white);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 36px 40px;
-}
 
-.mailing-list-inner {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.mailing-list-text h3 {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  color: var(--dark);
-  margin: 6px 0 0;
-}
-
-.mailing-list-form {
-  flex: 1;
-  min-width: 260px;
-}
-
-.mailing-list-form label {
-  display: block;
-  font-size: 13px;
-  color: var(--mid);
-  margin-bottom: 10px;
-}
-
-.mailing-list-row {
-  display: flex;
-  gap: 8px;
-}
-
-.mailing-list-form input {
-  flex: 1;
-  padding: 10px 16px;
-  border: 1.5px solid var(--border);
-  border-radius: 100px;
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--dark);
-  background: white;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.mailing-list-form input:focus {
-  border-color: var(--lu-accent);
-}
-
-/* go-button already defined in old content-pages.css; override to match new style */
-.go-button {
-  width: auto !important;
-  height: auto !important;
-  padding: 10px 20px !important;
-  border-radius: 100px !important;
-  background-color: var(--lu-accent) !important;
-  color: white !important;
-  font-family: var(--font-body) !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  border: none !important;
-  cursor: pointer;
-  transition: opacity 0.2s !important;
-}
-
-.go-button:hover {
-  background-color: var(--lu-accent-light) !important;
-}
-
-#mailing_list.error   input { border-color: #ef4444; background: #fef2f2; }
-#mailing_list.success input { border-color: #22c55e; background: #f0fdf4; }
-
-
-/* ── RESPONSIVE ADDITIONS ─────────────────────────────────────────── */
 
 @media (max-width: 768px) {
   .programs-map-block { width: 100%; height: auto; }
@@ -401,6 +311,4 @@
   .class-card-has-img { flex-direction: column; }
   .class-card-img     { width: 100%; max-width: 200px; }
 
-  .mailing-list-block { padding: 28px 20px; }
-  .mailing-list-inner { flex-direction: column; gap: 20px; }
 }
