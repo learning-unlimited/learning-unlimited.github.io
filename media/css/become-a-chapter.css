@@ -229,7 +229,6 @@
 /* ── RESPONSIVE ──────────────────────────────────────────────────── */
 
 @media (max-width: 768px) {
-  .chapter-nav-cards  { grid-template-columns: 1fr; }
   .help-cards-grid    { grid-template-columns: 1fr; }
   .chapter-step-item  { flex-direction: column; }
   .chapter-step-number { width: 40px; height: 40px; font-size: 14px; }

@@ -15,8 +15,8 @@
   --mid: #4a4a4a;
   --muted: #8a8a8a;
   --accent: #7E94D4;
-  --accent-light: #a0b2e0;
-  --accent-muted: #7e94d41f;
+  --accent-light: color-mix(in srgb, var(--accent) 70%, white);
+  --accent-muted: color-mix(in srgb, var(--accent) 12%, transparent);
   --border: #e8e4db;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
   --shadow-md: 0 8px 32px rgba(0,0,0,0.08);
