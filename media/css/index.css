@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap');
 
 *, *::before, *::after {
   margin: 0;
@@ -25,7 +25,7 @@
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 40px;
-  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-display: 'Sora', sans-serif;
   --font-body: 'Nunito', sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
