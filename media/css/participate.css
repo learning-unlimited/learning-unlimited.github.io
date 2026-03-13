@@ -1,0 +1,172 @@
+/* ── PARTICIPATE INDEX — involvement cards ───────────────────────── */
+
+.involve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.involve-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  text-decoration: none;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.involve-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border);
+  transform: translateY(-4px);
+}
+
+.involve-card-icon  { font-size: 28px; }
+
+.involve-card-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.4px;
+}
+
+.involve-card-desc {
+  font-size: 14px;
+  color: var(--mid);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.involve-card-link {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 4px;
+  transition: text-decoration 0.2s;
+}
+
+.involve-card:hover .involve-card-link { text-decoration: underline; }
+
+.participate-intro {
+  font-size: 16px;
+  color: var(--mid);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.participate-intro a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.participate-intro a:hover { text-decoration: underline; }
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 16px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.quick-action {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 24px;
+  text-decoration: none;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.quick-action:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--border);
+  transform: translateY(-2px);
+}
+
+.quick-action-icon  { font-size: 22px; flex-shrink: 0; }
+
+.quick-action-label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.quick-action-sub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 1px;
+}
+
+/* ── VOLUNTEER — project cards ───────────────────────────────────── */
+
+.volunteer-intro {
+  font-size: 16px;
+  color: var(--mid);
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.volunteer-intro p         { margin-bottom: 14px; }
+.volunteer-intro a         { color: var(--accent); font-weight: 600; text-decoration: none; }
+.volunteer-intro a:hover   { text-decoration: underline; }
+
+.projects-datestamp {
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 28px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.project-card {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: box-shadow 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border);
+  transform: translateY(-3px);
+}
+
+.project-card h3 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--dark);
+  letter-spacing: -0.3px;
+  margin: 0 0 10px;
+}
+
+.project-card p           { font-size: 13px; color: var(--mid); line-height: 1.7; margin: 0; }
+.project-card a           { color: var(--accent); font-weight: 600; text-decoration: none; }
+.project-card a:hover     { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .involve-grid  { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .quick-actions { grid-template-columns: 1fr; }
+}

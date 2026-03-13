@@ -1,70 +1,87 @@
 ---
 layout: default
-title: Help LU
-seq: 10
 permalink: /participate/
-redirect_from:
-  - /participate/participate/
-  - /help/
+title: Help LU
 ---
 
-<h1>How Do I Get Involved?</h1>
-
-<div class="threecolbox">
-  <div class="colbox"><h2><a href="/participate/donate">Donate</a></h2>LU uses its funds to start new chapters and provide support and mentorship to existing programs.<br><a href="/participate/donate">Support our work by donating today.</a></div>
-  <div class="colbox"><h2><a href="/participate/testimonials">Give a Testimonial</a></h2>If you attended a program as a student or teacher, or have seen first-hand the impact LU programs can have, help us by <a href="/participate/testimonials">giving us a testimonial</a>.</div>
-  <div class="colbox"><h2><a href="/participate/volunteer/">Volunteer</a></h2>Can you help LU or one of our local programs? <a href="/participate/volunteer">Find out more.</a></div>
-  <div class="colbox"><h2><a href="https://docs.google.com/document/d/1-fnodjeNjqJlVq-dnUHs2wpIc-MEtwSCPYcP_gn00XM/edit">Lead</a></h2>LU has a <a>Board of Directors</a> to lead it into the future. If you would like set the mission for the organization, read more and apply <a href="https://docs.google.com/document/d/1Mx9esPYyskLZ3j-QK7Qw2Uu2lJKECRtQYJK0ETBUxbg/edit">here</a>.
-  <div class="clear"></div>
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-label"><span class="page-label-dot"></span>Get Involved</div>
+    <h1>How Do I Get Involved?</h1>
+    <p>Learning Unlimited is driven by its volunteers and supporters. There are many ways to join us as we bring more exciting learning and teaching opportunities to students everywhere, and we hope that you'll join us as we bring more and more exciting learning and teaching opportunities to students everywhere!</p>
+  </div>
 </div>
 
-<p>Learning Unlimited is driven by its volunteers and supporters.  Like the student groups that run Splash and other programs across the country, we are a community of individuals working together to achieve great change.  There are many ways to get involved, and we hope that you'll join us as we bring more and more exciting learning and teaching opportunities to students everywhere!</p>
+<div class="content-wrap">
 
-      <script>
-        function set_div_class(className) {
-          document.getElementById("mailing_list").className = className;
-        }
+  <div class="cta" style="margin-bottom:48px;">
+    <div class="eyebrow">Support our mission</div>
+    <h2>Donate to Learning Unlimited</h2>
+    <p>LU uses its funds to start new chapters and provide support and mentorship to existing programs across the country.</p>
+    <p class="prose-link"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53TD5UYZ9LVXY&source=url" class="cta-btn">Donate via PayPal →</a></p>
+  </div>
 
-        function submit_email() {
-          var xhr = new XMLHttpRequest();
-          var email = document.getElementById("email_input").value;
-          var data = "ca=41d65ce9-d319-4b8b-a283-eda01fa6d10a&list=1&source=EFD&required=list,email&email=" + encodeURIComponent(email);
-          xhr.addEventListener("load", handle_load);
-          xhr.addEventListener("error", function() {set_div_class("error");});
-          xhr.open("POST", "https://visitor2.constantcontact.com/api/signup")
-          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-          xhr.setRequestHeader('Content-Length', data.length);
-          xhr.send(data);
-          set_div_class("submitted");
-        }
+  <div class="cta">
+    <h2>Volunteer & Lead</h2>
+    <p class="prose-link">
+      Can you help LU or one of our local programs? Find out more about available 
+      <a href="/participate/volunteer">volunteer roles and projects</a>. <br />
+      LU has a Board of Directors to lead it into the future, If you would like to set the mission for the organization, you can also 
+      <a href="https://docs.google.com/document/d/1Mx9esPYyskLZ3j-QK7Qw2Uu2lJKECRtQYJK0ETBUxbg/edit" target="_blank">apply for our Board of Directors</a>.
+    </p>
+  </div>
 
-        function handle_load() {
-          if (this.responseText && JSON.parse(this.responseText).success) {
-            set_div_class("success");
-          } else {
-            set_div_class("error");
-          }
-        }
-      </script>
-      <div id="mailing_list">
-        <label for="email">Sign up to receive monthly announcements and events:</label>
-        <input id="email_input" name="email" value="" maxlength="80" type="text" placeholder="your email">
-        <button class="go-button" type="submit" data-enabled="enabled" onclick="javascript:submit_email()">GO</button>
+  <div class="feature-block" style="margin-top:48px;">
+    <figure class="feature-img">
+      <img src="/media/images/photos/leadership.jpg" alt="leadership">
+      <figcaption>Our community of passionate <a href="/participate/volunteer">voulnteers</a></figcaption>
+    </figure>
+    <div class="feature-text">
+      <div class="eyebrow">Testimonial</div>
+      <h3>Give a testimonial</h3>
+        <p>If you attended a program as a student or teacher, or have seen first-hand the impact LU programs can have, help us by <a href="/participate/testimonials">giving a testimonial</a>, or simply <a href="/contact">contact us</a> to find out more about how you can contribute.</p>
+    </div>
+  </div>
+
+  <div class="mailing-list-block">
+    <div class="mailing-list-inner">
+      <div class="mailing-list-text">
+        <div class="eyebrow">Stay updated</div>
+        <h3>Monthly announcements &amp; events</h3>
       </div>
+      <div id="mailing_list" class="mailing-list-form">
+        <label for="email_input">Sign up to receive monthly announcements and events:</label>
+        <div class="mailing-list-row">
+          <input id="email_input" name="email" value="" maxlength="80" type="text" placeholder="your@email.com">
+          <button class="go-button" type="submit" data-enabled="enabled" onclick="submit_email('41d65ce9-d319-4b8b-a283-eda01fa6d10a')">GO</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p>Read on to learn about <a href="/participate/volunteer">volunteer opportunities with LU</a>.</p>
+    <div class="quick-actions">
+    <a href="/contact" class="quick-action">
+      <div class="quick-action-icon">✉️</div>
+      <div>
+        <div class="quick-action-label">Contact Us</div>
+        <div class="quick-action-sub">To volunteer or find out more</div>
+      </div>
+    </a>
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53TD5UYZ9LVXY&source=url" target="_blank" class="quick-action">
+      <div class="quick-action-icon">💳</div>
+      <div>
+        <div class="quick-action-label">Donate via PayPal</div>
+        <div class="quick-action-sub">To help us in our work</div>
+      </div>
+    </a>
+    <a href="/participate/volunteer" class="quick-action">
+      <div class="quick-action-icon">🙋</div>
+      <div>
+        <div class="quick-action-label">Volunteer Opportunities</div>
+        <div class="quick-action-sub">Read on to learn more</div>
+      </div>
+    </a>
+  </div>
 
-<table class="help_table">
-  <tr>
-    <td>
-      <span class="link"><a href="/contact"><img src="/media/images/content-pages/navbar-links/normal/contact.gif" alt="Contact" class="normal" style="border:none" /><img src="/media/images/content-pages/navbar-links/hover/contact.gif" alt="Contact" class="hover" style="border:none" /></a></span>
-    </td>
-    <td>
-      <span class="link"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=53TD5UYZ9LVXY&source=url"><img src="/media/images/content-pages/navbar-links/normal/give.gif" alt="Give" class="normal" style="border:none" /><img src="/media/images/content-pages/navbar-links/hover/give.gif" alt="Give" class="hover" style="border:none" /></a></span>
-    </td>
-  </tr>
-  <tr>
-    <td>To volunteer or find out more</td>
-    <td>To help us in our work</td>
-  </tr>
-</table>
+</div>
+
