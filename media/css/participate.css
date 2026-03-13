@@ -69,8 +69,9 @@
 .participate-intro a:hover { text-decoration: underline; }
 
 .quick-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
   gap: 16px;
   margin-top: 40px;
   padding-top: 32px;
@@ -167,5 +168,5 @@
 @media (max-width: 768px) {
   .involve-grid  { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
-  .quick-actions { flex-direction: column; }
+  .quick-actions { grid-template-columns: 1fr; }
 }

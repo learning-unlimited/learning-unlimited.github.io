@@ -373,6 +373,8 @@
 
 .contact-chip {
   display: inline-flex; align-items: center; gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
   background: var(--accent-muted);
   border: 1px solid var(--border);
   border-radius: 100px;
@@ -402,4 +404,12 @@
 
   .cta           { padding: 32px 24px; }
   .cta h2        { font-size: 24px; }
+
+  .contact-chip {
+    border-radius: 20px; 
+    flex-direction: column;
+    padding: 12px;
+    width: 100%; 
+  }
+  .chip-sep { display: none; }
 }
