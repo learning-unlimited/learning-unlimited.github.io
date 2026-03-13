@@ -2,27 +2,28 @@ function set_div_class(className) {
     document.getElementById("mailing_list").className = "mailing-list-form " + className;
 }
 
-function submit_email(contactId) {
-    var xhr = new XMLHttpRequest();
-    var email = document.getElementById("email_input").value;
-    var data = "ca=" + contactId + "&list=1&source=EFD&required=list,email&email=" + encodeURIComponent(email);
-    
-    xhr.addEventListener("load", handle_load);
-    xhr.addEventListener("error", function() { set_div_class("error"); });
-    xhr.open("POST", "https://visitor2.constantcontact.com/api/signup");
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.send(data);
-    set_div_class("submitted");
+function is_valid_email(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-function handle_load() {
-    try {
-        if (this.responseText && JSON.parse(this.responseText).success) {
-            set_div_class("success");
-        } else {
-            set_div_class("error");
-        }
-    } catch(e) {
+function submit_email(source) {
+    var emailInput = document.getElementById("email_input");
+    var email = emailInput ? emailInput.value.trim() : "";
+
+    if (!is_valid_email(email)) {
         set_div_class("error");
+        return;
     }
+
+    set_div_class("submitted");
+
+    var subscribeUrl = new URL("https://learningu.substack.com/subscribe");
+    subscribeUrl.searchParams.set("email", email);
+    subscribeUrl.searchParams.set("utm_source", "learningu.org");
+    subscribeUrl.searchParams.set("utm_medium", "website");
+    if (source) {
+        subscribeUrl.searchParams.set("utm_content", source);
+    }
+
+    window.location.assign(subscribeUrl.toString());
 }
