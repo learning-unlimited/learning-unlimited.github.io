@@ -9,6 +9,9 @@ Built with **Jekyll** and deployed via GitHub Pages.
 ## Quick Start
 
 ```bash
+# 0. (Recommended) Set a repo-local Ruby version if using rbenv
+rbenv local 3.2.2
+
 # 1. Install dependencies (Ruby + Bundler required)
 bundle install
 
@@ -19,15 +22,19 @@ bundle exec jekyll serve --livereload
 http://localhost:4000
 ```
 
-> **Ruby version:** 2.7+ recommended. Install via [`rbenv`](https://github.com/rbenv/rbenv) or [`rvm`](https://rvm.io/).
+> **Ruby:** Install via [`rbenv`](https://github.com/rbenv/rbenv) or [`rvm`](https://rvm.io/).
+>
+> If you use `rbenv`, prefer `rbenv local <version>` in this repository so you don't affect Ruby versions in other projects. `rbenv global <version>` changes your default Ruby everywhere.
 ---
 
 ## Dependencies
 
 | Package | Purpose |
 |---------|---------|
-| `jekyll` | Static site generator |
-| `jekyll-redirect-from` | Handles `redirect_from` / `redirect_to` in front matter |
+| `github-pages` | Pins a production-compatible Jekyll + plugin set used by GitHub Pages |
+| `webrick` | Required for local Jekyll server on newer Ruby versions |
+
+Dependency versions are standardized by `github-pages` and the committed `Gemfile.lock`.
 
 ---
 
