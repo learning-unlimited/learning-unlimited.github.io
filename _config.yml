@@ -3,7 +3,7 @@
 # Since our theme is very homebrew, we don't really use all of the traditional
 # jekyll settings like title, they're just hardcoded in various places.  But
 # this has some options written by jekyll, and some global routing options.
-gems:
+plugins:
   - jekyll-redirect-from
 
 markdown: kramdown
