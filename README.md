@@ -10,7 +10,8 @@ Built with **Jekyll** and deployed via GitHub Pages.
 
 ```bash
 # 0. (Recommended) Set a repo-local Ruby version if using rbenv
-rbenv local 3.2.2
+#    Use a Ruby version supported by the `github-pages` gem in this repo's Gemfile
+rbenv local <ruby-version-supported-by-github-pages>
 
 # 1. Install dependencies (Ruby + Bundler required)
 bundle install
@@ -24,7 +25,9 @@ http://localhost:4000
 
 > **Ruby:** Install via [`rbenv`](https://github.com/rbenv/rbenv) or [`rvm`](https://rvm.io/).
 >
-> If you use `rbenv`, prefer `rbenv local <version>` in this repository so you don't affect Ruby versions in other projects. `rbenv global <version>` changes your default Ruby everywhere.
+> If you use `rbenv`, prefer `rbenv local <ruby-version-supported-by-github-pages>` in this repository so you don't affect Ruby versions in other projects. `rbenv global <version>` changes your default Ruby everywhere.
+>
+> To pick a version, check which Ruby versions are supported by the [`github-pages` gem](https://pages.github.com/versions/) that this repo depends on.
 ---
 
 ## Dependencies
