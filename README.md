@@ -11,15 +11,21 @@ Built with **Jekyll** and deployed via GitHub Pages.
 ```bash
 # 0. (Recommended) Set a repo-local Ruby version if using rbenv
 #    Use a Ruby version supported by the `github-pages` gem in this repo's Gemfile
+#    Replace `<ruby-version-supported-by-github-pages>` with a specific Ruby version supported by GitHub Pages (see note below).
+
 rbenv local <ruby-version-supported-by-github-pages>
 
-# 1. Install dependencies (Ruby + Bundler required)
+# 1. Install Bundler 2.5.9+ (required by Gemfile.lock)
+gem install bundler -v "~> 2.5"
+bundle --version
+
+# 2. Install dependencies
 bundle install
 
-# 2. Serve locally with live reload
+# 3. Serve locally with live reload
 bundle exec jekyll serve --livereload
 
-# 3. Open in browser
+# 4. Open in browser
 http://localhost:4000
 ```
 
@@ -27,7 +33,9 @@ http://localhost:4000
 >
 > If you use `rbenv`, prefer `rbenv local <ruby-version-supported-by-github-pages>` in this repository so you don't affect Ruby versions in other projects. `rbenv global <version>` changes your default Ruby everywhere.
 >
-> To pick a version, check which Ruby versions are supported by the [`github-pages` gem](https://pages.github.com/versions/) that this repo depends on.
+> To pick a version, check which Ruby versions are supported by the [`github-pages` gem](https://pages.github.com/versions.json) that this repo depends on.
+>
+> **Bundler:** This repo's `Gemfile.lock` was generated with Bundler `2.5.9`, so use Bundler `2.5.9+`.
 ---
 
 ## Dependencies
@@ -35,7 +43,7 @@ http://localhost:4000
 | Package | Purpose |
 |---------|---------|
 | `github-pages` | Pins a production-compatible Jekyll + plugin set used by GitHub Pages |
-| `webrick` | Required for local Jekyll server on newer Ruby versions |
+
 
 Dependency versions are standardized by `github-pages` and the committed `Gemfile.lock`.
 
@@ -43,7 +51,7 @@ Dependency versions are standardized by `github-pages` and the committed `Gemfil
 
 ## Routes
 
-See [`ROUTES.md`](ROUTES.md) for the full URL map.
+See [`ROUTES.md`](routes.md) for the full URL map.
 
 ---
 
