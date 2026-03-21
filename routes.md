@@ -7,9 +7,9 @@ All the routes of website are listed here, which can simply be used for examinin
 / -> Landing page
 /... -> 404 page not found
 
+/privacy
 ## _about/
 /about
-/about/privacy 
 /about/results
 /about/supporters
 /about/what-we-do
