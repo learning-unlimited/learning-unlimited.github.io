@@ -7,7 +7,7 @@
   <meta name="description" content="Learning Unlimited empowers college students to create enriching educational programs for middle and high school students across the country.">
 
   <!-- Open Graph (Discord, LinkedIn, Facebook, etc.) -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}Learning Unlimited{% endif %}">
+ <meta property="og:title" content="{{ page.title | default: 'Learning Unlimited' }}">
   <meta property="og:description" content="{{ page.description | default: 'Learning Unlimited empowers college students to create enriching educational programs for middle and high school students across the country.' }}">
   <meta property="og:image" content="{{ page.image | default: '/media/images/social-preview.png' | absolute_url }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
@@ -15,7 +15,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}Learning Unlimited{% endif %}">
+ <meta name="twitter:title" content="{{ page.title | default: 'Learning Unlimited' }}">
   <meta name="twitter:description" content="{{ page.description | default: 'Learning Unlimited empowers college students to create enriching educational programs for middle and high school students across the country.' }}">
   <meta name="twitter:image" content="{{ page.image | default: '/media/images/social-preview.png' | absolute_url }}">
 
