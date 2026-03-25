@@ -693,7 +693,7 @@ section {
 /* footer styles */
 
 footer {
-  background: var(--dark);
+  background: var(--off-white); 
   padding: 64px 0 32px;
   position: relative;
 }
@@ -705,7 +705,7 @@ footer::before {
   left: 40px;
   right: 40px;
   height: 1px;
-  background: rgba(255,255,255,0.06);
+  background: var(--border);
 }
 
 .footer-inner {
@@ -733,7 +733,7 @@ footer::before {
 
 .footer-brand p {
   font-size: 14px;
-  color: rgba(255,255,255,0.4);
+  color: var(--mid);
   line-height: 1.7;
   margin-top: 16px;
   max-width: 280px;
@@ -743,7 +743,7 @@ footer::before {
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 700;
-  color: white;
+  color: var(--dark);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
@@ -759,13 +759,13 @@ footer::before {
 
 .footer-links a {
   font-size: 14px;
-  color: rgba(255,255,255,0.45);
+  color: var(--mid);
   text-decoration: none;
   transition: color var(--transition);
 }
 
 .footer-links a:hover {
-  color: white;
+  color: var(--accent);
 }
 
 .footer-bottom {
@@ -773,12 +773,12 @@ footer::before {
   align-items: center;
   justify-content: space-between;
   padding-top: 32px;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid var(--border);
 }
 
 .footer-copyright {
   font-size: 13px;
-  color: rgba(255,255,255,0.25);
+  color: var(--mid);
 }
 
 .footer-social {
@@ -790,15 +790,15 @@ footer::before {
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.08);
+ background: rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
   text-decoration: none;
   transition: all var(--transition);
-  color: rgba(255,255,255,0.45);
+ color: var(--mid);
 }
 
 .social-btn:hover {
