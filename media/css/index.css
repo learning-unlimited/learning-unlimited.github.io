@@ -29,6 +29,66 @@
   --font-body: 'Nunito', sans-serif;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+[data-theme="dark"] {
+  /* 1. Background Colors (Changed to dark) */
+  --white: #0d0d0d;       
+  --off-white: #1a1a1a;   
+  --cream: #222222;       
+
+  /* 2. Text Colors (Changed to light) */
+  --black: #ffffff;       
+  --dark: #f8f7f4;        
+  --mid: #a1a1a1;         
+  --muted: #6b6b6b;       
+
+  /* 3. Borders */
+  --border: #333333;      
+
+  /* 4. Shadows  */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.6);
+  
+
+}
+
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  background: transparent;
+  border: 2px solid var(--border);
+  color: var(--black);
+  padding: 8px 10px;
+  border-radius: var(--radius-md, 20px);
+  cursor: pointer;
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--off-white);
+  border-color: var(--mid);
+}
+
+
+[data-theme="dark"] .theme-toggle-btn {
+  background: #0d0d0d;
+  color: #ffffff;
+  border-color: #333333; 
+}
+
+
+
+
+
+
+
+
+
+
 
 html {
   scroll-behavior: smooth;
