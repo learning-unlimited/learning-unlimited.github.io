@@ -68,6 +68,9 @@
   transition: all 0.3s ease;
 }
 
+.nav-theme {
+  margin-left: -15px; 
+}
 .theme-toggle-btn:hover {
   background: var(--off-white);
   border-color: var(--mid);
@@ -207,7 +210,7 @@ nav.scrolled {
 
 .nav-links a{
     text-decoration:none;
-    color:black;
+    color: var(--black);
     font-weight: 600;
 }
 
@@ -889,6 +892,18 @@ footer::before {
   .about-card-stack { height: 300px; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
   .chapter-grid { grid-template-columns: 1fr; }
+
+  /* 1. Move the wrapper to the top of the mobile menu */
+  
+  .nav-theme { order: -1; margin-left: 0; padding: 10px 20px;}
+
+  /* 2. Hide the text on mobile screens */
+ 
+  #theme-text {  display: none;}
+
+  /* 3. Force the button into a circular icon shape */
+ 
+  .theme-toggle-btn {   width: 42px;height: 42px; padding: 0;border-radius: 50%; justify-content: center;}
 }
 
 @media (max-width: 768px) {
