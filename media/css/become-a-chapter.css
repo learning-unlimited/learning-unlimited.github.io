@@ -154,8 +154,8 @@
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-.faq-item:hover {
-  border-color: var(--border);
+.faq-item:hover, .faq-item[open] {
+  border-color: var(--accent);
   box-shadow: var(--shadow-sm);
 }
 
@@ -166,10 +166,20 @@
   color: var(--dark);
   letter-spacing: -0.3px;
   padding: 22px 28px;
-  border-bottom: 1px solid var(--border);
   position: relative;
+  cursor: pointer;
+  list-style: none; /* Hide default browser marker */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/* Hide webkit marker */
+.faq-q::-webkit-details-marker {
+  display: none;
+}
+
+/* The Q icon - fixed size to maintain flex alignment */
 .faq-q::before {
   content: 'Q';
   display: inline-flex;
@@ -185,16 +195,44 @@
   font-weight: 800;
   color: var(--accent);
   margin-right: 12px;
-  vertical-align: middle;
-  position: relative;
-  top: -1px;
+  flex-shrink: 0;
+}
+
+/* Modern Chevron Icon */
+.faq-q::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+details[open] .faq-q::after {
+  transform: rotate(-135deg);
 }
 
 .faq-a {
   font-size: 15px;
   color: var(--mid);
   line-height: 1.8;
-  padding: 20px 28px;
+  padding: 0 28px 24px;
+  border-top: 1px solid transparent;
+  animation: faqFadeIn 0.3s ease-out forwards;
+}
+
+details[open] .faq-a {
+  border-top-color: var(--border);
+  padding-top: 20px;
+}
+
+@keyframes faqFadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 
