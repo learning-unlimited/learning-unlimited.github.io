@@ -819,7 +819,27 @@ footer::before {
   transform: translateY(0);
 }
 
+#back-to-top {
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  width: 50px !important;
+  height: 50px !important;
+  background: black !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  font-size: 24px !important;
+  cursor: pointer !important;
+  z-index: 99999 !important;
+}
+#back-to-top {
+  display: none !important;
+}
 
+#back-to-top.show {
+  display: block !important;
+}
 
 @media (max-width: 1024px) {
   .programs-grid { grid-template-columns: 1fr 1fr; }
