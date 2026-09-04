@@ -16,10 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const isDark = theme === 'dark';
     if (themeIcon) themeIcon.textContent = isDark ? '☀️' : '🌙';
     if (themeText) themeText.textContent = isDark ? 'Light Mode' : 'Dark Mode';
-    if (themeToggle) {
-    themeToggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
-    themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-  }
+   if (themeToggle) {
+      
+      themeToggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    }
   };
 
   updateButtonUI(document.documentElement.getAttribute('data-theme') || 'light');
