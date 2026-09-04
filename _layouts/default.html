@@ -51,6 +51,18 @@
 
   <link rel="icon" href="/media/images/favicon.ico">
   <link rel="manifest" href="/media/images/site.webmanifest">
+
+  <script>
+
+  (function () {
+    var theme = 'light';
+    try {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'dark' || stored === 'light') theme = stored;
+    } catch (e) { /* storage blocked */ }
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
 </head>
 
 <body>
