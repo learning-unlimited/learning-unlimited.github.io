@@ -904,7 +904,17 @@ footer::before {
   .hero-social-proof { gap: 16px; }
   .programs-header { flex-direction: column; align-items: flex-start; }
   .nav-cta .btn-ghost { display: none; }
-  
+  #theme-text { 
+  display: none;
+}
+
+.theme-toggle-btn { 
+  width: 42px; 
+  height: 42px; 
+  padding: 0;
+  border-radius: 50%; 
+  justify-content: center;
+}
 }
 
 @media (max-width: 480px) {
