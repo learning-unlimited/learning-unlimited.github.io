@@ -23,7 +23,10 @@
   margin-top: 8px;
   transition: transform 0.2s;
 }
-
+.chapter-nav-card:hover
+{
+  border-color: #7E94D4;
+}
 .chapter-nav-card:hover .chapter-nav-arrow {
   transform: translateX(4px);
 }
