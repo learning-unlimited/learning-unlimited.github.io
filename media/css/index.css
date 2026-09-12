@@ -895,6 +895,8 @@ footer::before {
     gap: 4px;
     border-top: 1px solid var(--border);
     z-index: 1000;
+    justify-content: flex-start;
+    align-items: stretch;
   }
 
   /* When JS adds .open the menu is visible */
