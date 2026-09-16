@@ -30,6 +30,59 @@
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+[data-theme="dark"] {
+  /* 1. Background Colors (Changed to dark) */
+  --white: #0d0d0d;       
+  --off-white: #1a1a1a;   
+  --cream: #222222;       
+  /* 2. Text Colors (Changed to light) */
+  --black: #ffffff;       
+  --dark: #f8f7f4;        
+  --mid: #a1a1a1;         
+  --muted: #6b6b6b;       
+  /* 3. Borders */
+  --border: #333333;      
+  /* 4. Shadows  */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.6);
+}
+[data-theme="dark"] nav {
+  background: rgba(13, 13, 13, 0.85);
+}
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  background: transparent;
+  border: 2px solid var(--border);
+  color: var(--black);
+  padding: 8px 10px;
+  border-radius: var(--radius-md, 20px);
+  cursor: pointer;
+  font-family: var(--font-body, sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+   transition: background-color var(--transition),
+              border-color var(--transition),
+              color var(--transition);
+}
+
+.nav-theme {
+  margin-left: -15px; 
+}
+.theme-toggle-btn:hover {
+  background: var(--off-white);
+  border-color: var(--mid);
+}
+
+
+[data-theme="dark"] .theme-toggle-btn {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--border);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -147,7 +200,7 @@ nav.scrolled {
 
 .nav-links a{
     text-decoration:none;
-    color:black;
+    color: var(--black);
     font-weight: 600;
 }
 
@@ -849,8 +902,13 @@ footer::before {
   .about-card-stack { height: 300px; }
   .footer-top { grid-template-columns: 1fr 1fr; gap: 40px; }
   .chapter-grid { grid-template-columns: 1fr; }
+  .nav-theme { 
+    order: -1;
+    margin-left: 0;
+    padding: 10px 20px;
+  }
 }
-
+ 
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
   .nav-links { display: none; }
@@ -866,6 +924,17 @@ footer::before {
   .hero-social-proof { gap: 16px; }
   .programs-header { flex-direction: column; align-items: flex-start; }
   .nav-cta .btn-ghost { display: none; }
+  #theme-text { 
+  display: none;
+}
+
+.theme-toggle-btn { 
+  width: 42px; 
+  height: 42px; 
+  padding: 0;
+  border-radius: 50%; 
+  justify-content: center;
+}
 }
 
 @media (max-width: 480px) {
@@ -897,7 +966,6 @@ footer::before {
     z-index: 1000;
   }
 
-  /* When JS adds .open the menu is visible */
   .nav-links.open { display: flex; }
 
   .nav-links li { width: 100%; }
