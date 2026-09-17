@@ -25,7 +25,7 @@
 }
 .chapter-nav-card:hover
 {
-  border-color: #7E94D4;
+  border-color: var(--accent);
 }
 .chapter-nav-card:hover .chapter-nav-arrow {
   transform: translateX(4px);
