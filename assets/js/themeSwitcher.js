@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
-  const themeIcon = document.getElementById('theme-icon');
-  const themeText = document.getElementById('theme-text');
 
   const setStoredTheme = (theme) => {
     try {
@@ -14,12 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sync the button UI with the theme already applied by the inline <head> script
   const updateButtonUI = (theme) => {
     const isDark = theme === 'dark';
-    if (themeIcon) themeIcon.textContent = isDark ? '☀️' : '🌙';
-    if (themeText) themeText.textContent = isDark ? 'Light Mode' : 'Dark Mode';
-   if (themeToggle) {
-      
+    if (themeToggle) {
       themeToggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
       themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      themeToggle.setAttribute('title', isDark ? 'Switch to light mode' : 'Switch to dark mode');
     }
   };
 
