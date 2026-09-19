@@ -10,14 +10,33 @@
     <span class="nav-logo-text">Learning Unlimited</span>
   </a>
 
-  <button
-    class="hamburger"
-    id="hamburger"
-    type="button"
-    aria-controls="nav-links"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >☰</button>
+  <div class="nav-actions">
+    <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+      <svg class="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 2v2"/>
+        <path d="M12 20v2"/>
+        <path d="m4.93 4.93 1.41 1.41"/>
+        <path d="m17.66 17.66 1.41 1.41"/>
+        <path d="M2 12h2"/>
+        <path d="M20 12h2"/>
+        <path d="m6.34 17.66-1.41 1.41"/>
+        <path d="m19.07 4.93-1.41 1.41"/>
+      </svg>
+      <svg class="theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+      </svg>
+    </button>
+
+    <button
+      class="hamburger"
+      id="hamburger"
+      type="button"
+      aria-controls="nav-links"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >☰</button>
+  </div>
  
   <ul class="nav-links" id="nav-links" role="list">
     <li><a href="/about"               {% if page.url contains '/about'               %}class="nav-active"{% endif %}>About LU</a></li>
@@ -35,15 +54,6 @@
       >Donate ↗</a>
         
     </li>
-
-
-      <li class="nav-theme">
-      <button type="button" id="theme-toggle" class="theme-toggle-btn" aria-label="Switch to dark mode" aria-pressed="false">
-             <span id="theme-icon">🌙</span>
-             <span id="theme-text">Dark Mode</span>
-      </button>
-      </li>
-    
   </ul>
 
 </nav>
