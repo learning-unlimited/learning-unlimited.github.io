@@ -251,12 +251,12 @@ nav.scrolled {
   margin-right: 20px;
 }
 
-.nav-links li a:hover{
-    color:var(--accent);
+.nav-links li a:not(.btn):hover {
+    color: var(--accent);
 }
 
-.nav-links a{
-    text-decoration:none;
+.nav-links a:not(.btn) {
+    text-decoration: none;
     color: var(--black);
     font-weight: 600;
 }
@@ -291,8 +291,8 @@ nav.scrolled {
 
 .btn-ghost:hover, .btn-ghost-donor:hover {
   background: var(--dark);
-  color: white;
-  border: 1px solid black;
+  color: var(--white);
+  border-color: var(--dark);
 }
 
 .btn-primary {
@@ -303,6 +303,7 @@ nav.scrolled {
 
 .btn-primary:hover {
   background: var(--accent-light);
+  color: #0d0d0d;
   transform: translateY(-1px);
 }
 
@@ -1010,7 +1011,7 @@ footer::before {
     width: 100%;
   }
 
-  .nav-links a {
+  .nav-links a:not(.btn) {
     display: block;
     padding: 10px 20px; 
     border-radius: var(--radius-sm, 8px);
@@ -1018,8 +1019,8 @@ footer::before {
     font-weight: 600;
   }
 
-  .nav-links a:hover,
-  .nav-links a.nav-active {
+  .nav-links a:not(.btn):hover,
+  .nav-links a:not(.btn).nav-active {
     background: var(--accent-muted, #eef0fa);
   }
 
