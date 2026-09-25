@@ -304,6 +304,11 @@
 
 .go-button:hover {
   background-color: var(--accent-light) !important;
+  color: #0d0d0d !important;
+}
+
+[data-theme="dark"] .go-button {
+  color: #0d0d0d !important;
 }
 
 #mailing_list.error   input { border-color: #ef4444; background: #fef2f2; }
