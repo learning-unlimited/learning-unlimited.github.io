@@ -17,7 +17,7 @@
 
 .value-card:hover {
   box-shadow: var(--shadow-md);
-  border-color: var(--border);
+  border-color: var(--accent);
   transform: translateY(-4px);
 }
 

@@ -32,7 +32,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 14px 5px 8px;
+  padding: 5px 8px 5px 8px;
   background: var(--accent-muted);
   border: 1px solid var(--border);
   border-radius: 100px;
@@ -46,7 +46,8 @@
 }
 
 .page-label-dot {
-  width: 6px; height: 6px;
+  width: 6px; 
+  height: 6px;
   background: var(--accent);
   border-radius: 50%;
   flex-shrink: 0;
