@@ -291,7 +291,7 @@ nav.scrolled {
 
 .btn-ghost:hover, .btn-ghost-donor:hover {
   background: var(--dark);
-  color: var(--white);
+  color: var(--dark);
   border-color: var(--dark);
 }
 
