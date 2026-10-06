@@ -161,7 +161,7 @@ body::before {
   font-feature-settings: 'liga';
 }
 
-.nav-links a.nav-active {
+.nav-links a:not(.btn).nav-active {
   color: var(--accent);
   font-weight: 700;
 }

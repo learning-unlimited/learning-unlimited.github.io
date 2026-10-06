@@ -45,14 +45,6 @@
   margin-bottom: 20px;
 }
 
-.page-label-dot {
-  width: 6px; 
-  height: 6px;
-  background: var(--accent);
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
 .page-hero h1 {
   font-family: var(--font-display);
   font-size: clamp(32px, 5vw, 54px);
