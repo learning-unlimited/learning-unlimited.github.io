@@ -289,23 +289,24 @@ nav.scrolled {
   border: 1px solid var(--border);
 }
 
-.btn-ghost:hover, .btn-ghost-donor:hover {
+/*.btn-ghost:hover, .btn-ghost-donor:hover {
   background: var(--dark);
   color: var(--dark);
   border-color: var(--dark);
 }
-
+*/
 .btn-primary {
   background: var(--accent);
   color: white;
   box-shadow: 0 4px 12px var(--accent-muted);
 }
 
-.btn-primary:hover {
+/*.btn-primary:hover {
   background: var(--accent-light);
   color: #0d0d0d;
   transform: translateY(-1px);
 }
+*/
 
 .btn-lg {
   padding: 14px 28px;
